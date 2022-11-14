@@ -11,6 +11,8 @@ public class Car {
 	
 	// 자바에서는 생성자를 명시하지 않으면 컴파일 과정에서 생성자를 생성해준다.
 	
+	Car() {}
+	
 	Car(String model) {
 //		this.model = model;
 		this(model, "은색", 250);
