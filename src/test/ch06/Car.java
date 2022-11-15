@@ -7,11 +7,14 @@ public class Car {
 	String color = "검정";
 	int maxSpeed = 350;
 	int speed;
+	static int numbering = 0;
 //	boolean start;	// 시동여부
 	
 	// 자바에서는 생성자를 명시하지 않으면 컴파일 과정에서 생성자를 생성해준다.
 	
-	Car() {}
+	Car() {
+		numbering++;
+	}
 	
 	Car(String model) {
 //		this.model = model;
