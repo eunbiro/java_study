@@ -1,8 +1,15 @@
 package test.ch06.exam01.pakage1;
 
 public class B {
-//	A a = new A();	// A클래스(default) 접근 가능
-	A a1 = new A(true);		// public 실행 가능
-	A a2 = new A(1);		// default 실행 가능
-//	A a3 = new A("문자열");	// private 실행 불가
+	public void method() {
+		A a = new A();
+				
+		a.field1 = 1;		// 실행 가능
+		a.field2 = 1;		// 실행 가능
+		a.field3 = 1;		// private로 선언한 변수라 실행 불가
+		a.method1();		// 실행 가능
+		a.method2();		// 실행 가능
+		a.method3();		// private로 선언한 메서드라 실행 불가
+	}
+	
 }

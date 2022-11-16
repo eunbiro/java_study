@@ -1,20 +1,22 @@
 package test.ch06.exam01.pakage1;
 
 // 클래스는 public, default 접근제한자를 가질 수 있다.
+// 생성자는 public, default, private 접근제한자를 가질 수 있다.
 public class A {
-	A a3 = new A("문자열");		// private 같은 class 안에서만 사용 가능
+	public int field1;
+	int field2;
+	private int field3;
 	
-	
-	public A(boolean b) {
-		
+	public A() {
+		field1 = 1;		// 실행 가능
+		field2 = 1;		// 실행 가능
+		field3 = 1;		// 실행 가능
+		method1();		// 실행 가능
+		method2();		// 실행 가능
+		method3();		// 실행 가능
 	}
 	
-	A(int b) {
-		
-	}
-	
-	private A(String s) {
-		
-	}
-	
+	public void method1() {}
+	void method2() {}
+	private void method3() {}
 }

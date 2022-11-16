@@ -1,5 +1,5 @@
-package test.ch06;
-/*
+package test.ch06.question;
+
 public class MyTv {
 	boolean isPowerOn;
 	int channel;
@@ -11,7 +11,7 @@ public class MyTv {
 
 	void turnOnOff() {
 		// (1) isPowerOn의 값이 true면 false로, false면 true로 바꾼다.
-		if (this.isPowerOn == true) {
+		if (this.isPowerOn) {
 			this.isPowerOn = false;
 		} else {
 			this.isPowerOn = true;
@@ -37,23 +37,25 @@ public class MyTv {
 	void channelUp() {
 		// (4) channel의 값을 1증가시킨다.
 		// 만일 channel이 MAX_CHANNEL이면, channel의 값을 MIN_CHANNEL로 바꾼다.
-		this.channel++;
+		
 		if (this.channel == MAX_CHANNEL) {
 			this.channel = MIN_CHANNEL;
+		} else {
+			this.channel++;
 		}
 	}
 
 	void channelDown() {
 		// (5) channel의 값을 1감소시킨다.
 		// 만일 channel이 MIN_CHANNEL이면, channel의 값을 MAX_CHANNEL로 바꾼다.
-		this.channel--;
+		
 		if (this.channel == MIN_CHANNEL) {
 			this.channel = MAX_CHANNEL;
+		} else {
+			this.channel--;
 		}
 	}
-} // class MyTv
-
-class Example {
+	
 	public static void main(String args[]) {
 		MyTv t = new MyTv();
 
@@ -68,5 +70,9 @@ class Example {
 		t.volumeUp();
 		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);
 	}
-}
-*/
+} // class MyTv
+
+
+	
+
+
