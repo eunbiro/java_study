@@ -3,10 +3,20 @@ package test.ch06.question;
 public class Example {
 
 	static int max(int[] arr) {
-		for (int i = 0; i < arr.length; i++) {
-			int tmp = arr[i];
-			if (tmp < arr[i])
+		int maxNum = 0;
+		
+		if (arr == null || arr.length == 0) {
+			maxNum = -999999;
+			return maxNum;
 		}
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (maxNum < arr[i]) {
+				maxNum = arr[i];
+			}
+		}
+		
+		return maxNum;		
 	}
 	
 	
