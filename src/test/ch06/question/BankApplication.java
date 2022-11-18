@@ -1,5 +1,6 @@
 package test.ch06.question;						
 						
+import java.util.Iterator;
 import java.util.Scanner;						
 						
 public class BankApplication {						
@@ -44,10 +45,7 @@ public class BankApplication {
 						
 		for (int i = 0; i < accountArray.length; i++) {				
 			if (accountArray[i] != null) {			
-				System.out.println(		
-						accountArray[i].getAccNum() + "   " +
-						accountArray[i].getAccName() + "   " +
-						accountArray[i].getBalance()
+				System.out.println(accountArray[i].getAccNum() + "   " + accountArray[i].getAccName() + "   " +	accountArray[i].getBalance()
 				);		
 			} else {			
 				break;		
@@ -62,17 +60,23 @@ public class BankApplication {
 		System.out.println("------");
 
 		System.out.println("계좌번호 : ");
-		String accNum = scanner.next();
-		System.out.println("예금액");
-		int balance = scanner.nextInt();
-
-		Account2 chkNum = findAccount(accNum);
-
-		if (chkNum != null) {
-			chkNum.setSumBalance(balance);
-		} else {
-			System.out.println("잘못 입력하셨습니다.");
+		
+		for (int i = 0; i < 5; i++) {
+			String accNum = scanner.next();
+			
+			Account2 chkNum = findAccount(accNum);
+			
+			if (chkNum != null) {
+				System.out.println("예금액");
+				int balance = scanner.nextInt();
+				chkNum.setSumBalance(balance);
+			} else {
+				System.out.println("잘못 입력하셨습니다.");
+				
+			}
 		}
+		
+		
 	}					
 						
 	// 4. 출금					
@@ -82,18 +86,22 @@ public class BankApplication {
 		System.out.println("------");
 
 		System.out.println("계좌번호 : ");
-		String accNum = scanner.next();
-		System.out.println("출금액");
-		int balance = scanner.nextInt();
+		
 
-		Account2 chkNum = findAccount(accNum);
-
-		if (chkNum != null) {
-			chkNum.setMinusBalance(balance);
-		} else {
-			System.out.println("잘못 입력하셨습니다.");
+		for (int i = 0; i < 5; i++) {
+			String accNum = scanner.next();
+			
+			Account2 chkNum = findAccount(accNum);
+			
+			if (chkNum != null) {
+				System.out.println("출금액");
+				int balance = scanner.nextInt();
+				chkNum.setMinusBalance(balance);
+				break;
+			} else {
+				System.out.println("잘못 입력하셨습니다.");
+			}
 		}
-
 	}
 
 	private static Account2 findAccount(String accNum) {
