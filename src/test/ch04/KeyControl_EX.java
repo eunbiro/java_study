@@ -1,41 +1,41 @@
-package test.ch04;
-
-//import java.util.Scanner;
-
-public class KeyControl_EX {
-
-	public static void main(String[] args) {
-		// 1, 2¸¦ ÀÔ·ÂÇßÀ» ¶§ ¼Óµµ¸¦ Áõ°¡, °¨¼Ó ½ÃÅ°°í, 3 ÀÔ·ÂÇÏ¸é Á¾·á
-		
-//		Scanner scanner = new Scanner(System.in);
-//		boolean run = true;
-//		int speed = 0;
-//
-//		while (run) {
-//			System.out.println("===========");
-//			System.out.println("1. Áõ¼Ó, 2. °¨¼Ò, 3. ÁßÁö");
-//			System.out.println("===========");
-//			System.out.println("¼±ÅÃ : ");
-//
-//			String strNum = scanner.nextLine();
-//
-//			if (strNum.equals("1")) {
+package test.ch04;				
+				
+//import java.util.Scanner;				
+				
+public class KeyControl_EX {				
+				
+	public static void main(String[] args) {			
+		// 1, 2ë¥¼ ì…ë ¥í–ˆì„ ë•Œ ì†ë„ë¥¼ ì¦ê°€, ê°ì† ì‹œí‚¤ê³ , 3 ì…ë ¥í•˜ë©´ ì¢…ë£Œ		
+				
+//		Scanner scanner = new Scanner(System.in);		
+//		boolean run = true;		
+//		int speed = 0;		
+//				
+//		while (run) {		
+//			System.out.println("===========");	
+//			System.out.println("1. ì¦ì†, 2. ê°ì†Œ, 3. ì¤‘ì§€");	
+//			System.out.println("===========");	
+//			System.out.println("ì„ íƒ : ");	
+//				
+//			String strNum = scanner.nextLine();	
+//				
+//			if (strNum.equals("1")) {	
 //				speed++;
-//				System.out.println("ÇöÀç¼Óµµ : " + speed);
-//			} else if ((strNum.equals("2"))) {
+//				System.out.println("í˜„ì¬ì†ë„ : " + speed);
+//			} else if ((strNum.equals("2"))) {	
 //				speed--;
-//				System.out.println("ÇöÀç¼Óµµ : " + speed);
-//			} else if ((strNum.equals("3"))) {
+//				System.out.println("í˜„ì¬ì†ë„ : " + speed);
+//			} else if ((strNum.equals("3"))) {	
 //				run = false;
-//				System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+//				System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 ////				break;
 ////				continue;
-//			}
-//			
-//		}
-		
-		
-		
-	}
-
-}
+//			}	
+//				
+//		}		
+				
+				
+				
+	}			
+				
+}				

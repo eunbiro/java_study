@@ -1,14 +1,14 @@
-package test.ch06;
-
-public class Earth {
-	// »ó¼ö(º¯¼ö¸íÀº ´ë¹®ÀÚ·Î ¼±¾ğ)
-	// final : Àı´ë º¯°æX, static : Àü¿ª º¯¼ö
-	static final double EARTH_RADIUS = 6400;		// Áö±¸ µÑ·¹
-	static final double EARTH_SURFACE_AREA;
-	
-	// static : static ÇÊµå¸¦ ÃÊ±âÈ­ ÇØÁÙ ¶§ »ç¿ë
-	static {
-		EARTH_SURFACE_AREA = 4 * Math.PI * EARTH_RADIUS * EARTH_RADIUS;
-	}
-	
-}
+package test.ch06;			
+			
+public class Earth {			
+	// ìƒìˆ˜(ë³€ìˆ˜ëª…ì€ ëŒ€ë¬¸ìë¡œ ì„ ì–¸)		
+	// final : ì ˆëŒ€ ë³€ê²½X, static : ì „ì—­ ë³€ìˆ˜		
+	static final double EARTH_RADIUS = 6400;		// ì§€êµ¬ ë‘˜ë ˆ
+	static final double EARTH_SURFACE_AREA;		
+			
+	// static : static í•„ë“œë¥¼ ì´ˆê¸°í™” í•´ì¤„ ë•Œ ì‚¬ìš©		
+	static {		
+		EARTH_SURFACE_AREA = 4 * Math.PI * EARTH_RADIUS * EARTH_RADIUS;	
+	}		
+			
+}			

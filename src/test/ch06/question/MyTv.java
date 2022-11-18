@@ -1,78 +1,73 @@
-package test.ch06.question;
-
-public class MyTv {
-	boolean isPowerOn;
-	int channel;
-	int volume;
-	final int MAX_VOLUME = 100;
-	final int MIN_VOLUME = 0;
-	final int MAX_CHANNEL = 100;
-	final int MIN_CHANNEL = 1;
-
-	void turnOnOff() {
-		// (1) isPowerOnÀÇ °ªÀÌ true¸é false·Î, false¸é true·Î ¹Ù²Û´Ù.
-		if (this.isPowerOn) {
+package test.ch06.question;			
+			
+public class MyTv {			
+	boolean isPowerOn;		
+	int channel;		
+	int volume;		
+	final int MAX_VOLUME = 100;		
+	final int MIN_VOLUME = 0;		
+	final int MAX_CHANNEL = 100;		
+	final int MIN_CHANNEL = 1;		
+			
+	void turnOnOff() {		
+		// (1) isPowerOnì˜ ê°’ì´ trueë©´ falseë¡œ, falseë©´ trueë¡œ ë°”ê¾¼ë‹¤.	
+		if (this.isPowerOn) {	
 			this.isPowerOn = false;
-		} else {
+		} else {	
 			this.isPowerOn = true;
-		}
-	}
-
-	void volumeUp() {
-		// (2) volumeÀÇ °ªÀÌ MAX_VOLUMEº¸´Ù ÀÛÀ» ¶§¸¸ °ªÀ» 1Áõ°¡½ÃÅ²´Ù.
-		if (this.volume < MAX_VOLUME) {
+		}	
+	}		
+			
+	void volumeUp() {		
+		// (2) volumeì˜ ê°’ì´ MAX_VOLUMEë³´ë‹¤ ì‘ì„ ë•Œë§Œ ê°’ì„ 1ì¦ê°€ì‹œí‚¨ë‹¤.	
+		if (this.volume < MAX_VOLUME) {	
 			this.volume++;
-		}
-		
-	}
-
-	void volumeDown() {
-		// (3) volumeÀÇ °ªÀÌ MIN_VOLUMEº¸´Ù Å¬ ¶§¸¸ °ªÀ» 1°¨¼Ò½ÃÅ²´Ù.
-		if (this.volume > MIN_VOLUME) {
+		}	
+			
+	}		
+			
+	void volumeDown() {		
+		// (3) volumeì˜ ê°’ì´ MIN_VOLUMEë³´ë‹¤ í´ ë•Œë§Œ ê°’ì„ 1ê°ì†Œì‹œí‚¨ë‹¤.	
+		if (this.volume > MIN_VOLUME) {	
 			this.volume--;
-		}
-		
-	}
-
-	void channelUp() {
-		// (4) channelÀÇ °ªÀ» 1Áõ°¡½ÃÅ²´Ù.
-		// ¸¸ÀÏ channelÀÌ MAX_CHANNELÀÌ¸é, channelÀÇ °ªÀ» MIN_CHANNEL·Î ¹Ù²Û´Ù.
-		
-		if (this.channel == MAX_CHANNEL) {
+		}	
+			
+	}		
+			
+	void channelUp() {		
+		// (4) channelì˜ ê°’ì„ 1ì¦ê°€ì‹œí‚¨ë‹¤.	
+		// ë§Œì¼ channelì´ MAX_CHANNELì´ë©´, channelì˜ ê°’ì„ MIN_CHANNELë¡œ ë°”ê¾¼ë‹¤.	
+			
+		if (this.channel == MAX_CHANNEL) {	
 			this.channel = MIN_CHANNEL;
-		} else {
+		} else {	
 			this.channel++;
-		}
-	}
-
-	void channelDown() {
-		// (5) channelÀÇ °ªÀ» 1°¨¼Ò½ÃÅ²´Ù.
-		// ¸¸ÀÏ channelÀÌ MIN_CHANNELÀÌ¸é, channelÀÇ °ªÀ» MAX_CHANNEL·Î ¹Ù²Û´Ù.
-		
-		if (this.channel == MIN_CHANNEL) {
+		}	
+	}		
+			
+	void channelDown() {		
+		// (5) channelì˜ ê°’ì„ 1ê°ì†Œì‹œí‚¨ë‹¤.	
+		// ë§Œì¼ channelì´ MIN_CHANNELì´ë©´, channelì˜ ê°’ì„ MAX_CHANNELë¡œ ë°”ê¾¼ë‹¤.	
+			
+		if (this.channel == MIN_CHANNEL) {	
 			this.channel = MAX_CHANNEL;
-		} else {
+		} else {	
 			this.channel--;
-		}
-	}
-	
-	public static void main(String args[]) {
-		MyTv t = new MyTv();
-
-		t.channel = 100;
-		t.volume = 0;
-		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);
-		t.channelDown();
-		t.volumeDown();
-		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);
-		t.volume = 100;
-		t.channelUp();
-		t.volumeUp();
-		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);
-	}
-} // class MyTv
-
-
-	
-
-
+		}	
+	}		
+			
+	public static void main(String args[]) {		
+		MyTv t = new MyTv();	
+			
+		t.channel = 100;	
+		t.volume = 0;	
+		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);	
+		t.channelDown();	
+		t.volumeDown();	
+		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);	
+		t.volume = 100;	
+		t.channelUp();	
+		t.volumeUp();	
+		System.out.println("CH:" + t.channel + ", VOL:" + t.volume);	
+	}		
+} // class MyTv			

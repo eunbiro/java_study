@@ -1,22 +1,22 @@
-package test.ch07;
-
-public class SmartPhone extends phone{
-	
-	public boolean wifi;
-	
-	public SmartPhone(String model, String color) {
-		super();	// ºÎ¸ğ »ı¼ºÀÚ È£Ãâ
-		System.out.println("ÀÚ½Ä »ı¼ºÀÚ ½ÇÇà");
-		this.model = model;
-		this.color = color;
-	}
-	
-	public void setWifi(boolean wifi) {
-		this.wifi = wifi;
-		System.out.println("¿ÍÀÌÆÄÀÌ »óÅÂ º¯°æ");
-	}
-	
-	public void internet() {
-		System.out.println("ÀÎÅÍ³İ¿¡ ¿¬°áÇÕ´Ï´Ù.");
-	}
-}
+package test.ch07;			
+			
+public class SmartPhone extends phone{			
+			
+	public boolean wifi;		
+			
+	public SmartPhone(String model, String color) {		
+		super();	// ë¶€ëª¨ ìƒì„±ì í˜¸ì¶œ
+		System.out.println("ìì‹ ìƒì„±ì ì‹¤í–‰");	
+		this.model = model;	
+		this.color = color;	
+	}		
+			
+	public void setWifi(boolean wifi) {		
+		this.wifi = wifi;	
+		System.out.println("ì™€ì´íŒŒì´ ìƒíƒœ ë³€ê²½");	
+	}		
+			
+	public void internet() {		
+		System.out.println("ì¸í„°ë„·ì— ì—°ê²°í•©ë‹ˆë‹¤.");	
+	}		
+}			

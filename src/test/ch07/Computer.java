@@ -1,12 +1,12 @@
-package test.ch07;
-
-public class Computer extends Calculator {
-
-	// ¿À¹ö¶óÀÌµå : ºÎ¸ğÅ¬·¡½ºÀÇ ¸Ş¼Òµå¸¦ Àç Á¤ÀÇ(¹İÈ¯Å¸ÀÔ, ¸Ş¼Òµå ÀÌ¸§, ¸Å°³º¯¼ö°¡ °°¾Æ¾ß ÇÑ´Ù.)
-	@Override // ¿À¸¥Å¬¸¯ > source > override
-	public double areaCircle(double r) {
-		System.out.println("Computer °´Ã¼ÀÇ areaCircle() ½ÇÇà");
+package test.ch07;		
+		
+public class Computer extends Calculator {		
+		
+	// ì˜¤ë²„ë¼ì´ë“œ : ë¶€ëª¨í´ë˜ìŠ¤ì˜ ë©”ì†Œë“œë¥¼ ì¬ ì •ì˜(ë°˜í™˜íƒ€ì…, ë©”ì†Œë“œ ì´ë¦„, ë§¤ê°œë³€ìˆ˜ê°€ ê°™ì•„ì•¼ í•œë‹¤.)	
+	@Override // ì˜¤ë¥¸í´ë¦­ > source > override	
+	public double areaCircle(double r) {	
+		System.out.println("Computer ê°ì²´ì˜ areaCircle() ì‹¤í–‰");
 		return Math.PI * r * r;
-	}
-
-}
+	}	
+		
+}		

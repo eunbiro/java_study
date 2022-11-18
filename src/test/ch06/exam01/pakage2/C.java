@@ -1,17 +1,17 @@
-package test.ch06.exam01.pakage2;
-
-import test.ch06.exam01.pakage1.A;
-import test.ch06.exam01.pakage1.B;
-
-public class C {
-	public C() {
-		A a = new A();
-		
-		a.field1 = 1;		// ½ÇÇà °¡´É
-		a.field2 = 1;		// ´Ù¸¥ ÆĞÅ°Áö¿¡¼­ default·Î ¼±¾ğÇÑ º¯¼ö¶ó ½ÇÇà ºÒ°¡
-		a.field3 = 1;		// private·Î ¼±¾ğÇÑ º¯¼ö¶ó ½ÇÇà ºÒ°¡
-		a.method1();		// ½ÇÇà °¡´É
-		a.method2();		// ´Ù¸¥ ÆĞÅ°Áö¿¡¼­ default·Î ¼±¾ğÇÑ ¸Ş¼­µå¶ó ½ÇÇà ºÒ°¡
-		a.method3();		// private·Î ¼±¾ğÇÑ ¸Ş¼­µå¶ó ½ÇÇà ºÒ°¡
-	}
-}
+package test.ch06.exam01.pakage2;				
+				
+import test.ch06.exam01.pakage1.A;				
+import test.ch06.exam01.pakage1.B;				
+				
+public class C {				
+	public C() {			
+		A a = new A();		
+				
+		a.field1 = 1;		// ì‹¤í–‰ ê°€ëŠ¥
+		a.field2 = 1;		// ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì—ì„œ defaultë¡œ ì„ ì–¸í•œ ë³€ìˆ˜ë¼ ì‹¤í–‰ ë¶ˆê°€
+		a.field3 = 1;		// privateë¡œ ì„ ì–¸í•œ ë³€ìˆ˜ë¼ ì‹¤í–‰ ë¶ˆê°€
+		a.method1();		// ì‹¤í–‰ ê°€ëŠ¥
+		a.method2();		// ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì—ì„œ defaultë¡œ ì„ ì–¸í•œ ë©”ì„œë“œë¼ ì‹¤í–‰ ë¶ˆê°€
+		a.method3();		// privateë¡œ ì„ ì–¸í•œ ë©”ì„œë“œë¼ ì‹¤í–‰ ë¶ˆê°€
+	}			
+}				

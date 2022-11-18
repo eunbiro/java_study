@@ -1,34 +1,32 @@
-package test.ch06.question;
-
-public class MemberService {
-	String id = "hong";
-	String password = "12345";
-	
-	boolean login(String id, String password) {
-		if (this.id == id && this.password == password) {
+package test.ch06.question;			
+			
+public class MemberService {			
+	String id = "hong";		
+	String password = "12345";		
+			
+	boolean login(String id, String password) {		
+		if (this.id == id && this.password == password) {	
 			return true;
-		} else {
+		} else {	
 			return false;
-		}
-	}
-	
-	void logout(String id) {
-		System.out.println(id + "´ÔÀÌ ·Î±×¾Æ¿ô µÇ¾ú½À´Ï´Ù.");
-	}
-
-	
-	public static void main(String[]args) {
-		MemberService memberService = new MemberService();
-
-		boolean result = memberService.login("hong", "12345");
-
-		if(result) {
-		     System.out.println("·Î±×ÀÎ µÇ¾ú½À´Ï´Ù.");
-		     memberService.logout("hong");
-		} else {
-		     System.out.println("id ¶Ç´Â password°¡ ¿Ã¹Ù¸£Áö ¾Ê½À´Ï´Ù.");
-		}
-	}
-}
-
-
+		}	
+	}		
+			
+	void logout(String id) {		
+		System.out.println(id + "ë‹˜ì´ ë¡œê·¸ì•„ì›ƒ ë˜ì—ˆìŠµë‹ˆë‹¤.");	
+	}		
+			
+			
+	public static void main(String[]args) {		
+		MemberService memberService = new MemberService();	
+			
+		boolean result = memberService.login("hong", "12345");	
+			
+		if(result) {	
+		     System.out.println("ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.");	
+		     memberService.logout("hong");	
+		} else {	
+		     System.out.println("id ë˜ëŠ” passwordê°€ ì˜¬ë°”ë¥´ì§€ ì•ŠìŠµë‹ˆë‹¤.");	
+		}	
+	}		
+}			

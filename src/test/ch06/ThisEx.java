@@ -1,13 +1,13 @@
-package test.ch06;
-
-public class ThisEx {
-
-	public static void main(String[] args) {
-		This myCar = new This("Æ÷¸£½¦");
-		This yourCar = new This("º¥Ã÷");
+package test.ch06;		
+		
+public class ThisEx {		
+		
+	public static void main(String[] args) {	
+		This myCar = new This("í¬ë¥´ì‰");
+		This yourCar = new This("ë²¤ì¸ ");
 		
 		myCar.run();
 		yourCar.run();
-	}
-
-}
+	}	
+		
+}		

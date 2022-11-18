@@ -1,23 +1,23 @@
-package test.ch04;
-
-public class While_EX {
-
-	public static void main(String[] args) {
-//		int i = 1;
-//		int sum = 0;
-//		// 1~100 ±îÁöÀÇ ÇÕ°è
-//		while (i <= 100) {
+package test.ch04;			
+			
+public class While_EX {			
+			
+	public static void main(String[] args) {		
+//		int i = 1;	
+//		int sum = 0;	
+//		// 1~100 ê¹Œì§€ì˜ í•©ê³„	
+//		while (i <= 100) {	
 ////			System.out.println(i);
 //			sum += i;
 //			i++;
-//		}
-//		System.out.println(sum);
-		
-		int i = 1;
-		do {
+//		}	
+//		System.out.println(sum);	
+			
+		int i = 1;	
+		do {	
 			i++;
 			System.out.println(i);
-		} while(i <= 10);
-	}
-	
-}
+		} while(i <= 10);	
+	}		
+			
+}			

@@ -1,25 +1,25 @@
-package test.ch06;
-
-public class Calculator2 {
-	
-	// 1. ÇÊµå
-	static double pi = 3.14159;
-	static String model = "calc1";
-	static String number = "1";
-	static String info;
-	
-	// static ºí·Ï : static ÇÊµå¿¡ ´ëÇÑ ÃÊ±âÈ­ ÀÛ¾÷ÀÌ ÇÊ¿äÇÒ ¶§ »ç¿ë
-	static {
+package test.ch06;			
+			
+public class Calculator2 {			
+			
+	// 1. í•„ë“œ		
+	static double pi = 3.14159;		
+	static String model = "calc1";		
+	static String number = "1";		
+	static String info;		
+			
+	// static ë¸”ë¡ : static í•„ë“œì— ëŒ€í•œ ì´ˆê¸°í™” ì‘ì—…ì´ í•„ìš”í•  ë•Œ ì‚¬ìš©		
+	static {		
 		info = model + "_" + number;	// calc1_1
-	}
-	
-	// 2. ¸Ş¼Òµå
-	static int plus(int x, int y) {
-		return x + y;
-	}
-	
-	static int minus(int x, int y) {
-		return x - y;
-	}
-	
-}
+	}		
+			
+	// 2. ë©”ì†Œë“œ		
+	static int plus(int x, int y) {		
+		return x + y;	
+	}		
+			
+	static int minus(int x, int y) {		
+		return x - y;	
+	}		
+			
+}			

@@ -1,26 +1,26 @@
-package test.ch07;
-
-public class phone {
-	public String model;
-	public String color;
-	
-	public phone() {
-		System.out.println("ºÎ¸ğ »ı¼ºÀÚ ½ÇÇà");
-	}
-	
-	public void bell() {
-		System.out.println("º§ÀÌ ¿ï¸³´Ï´Ù.");
-	};
-	
-	public void sendVoice(String message) {
-		System.out.println("ÀÚ±â ¸ñ¼Ò¸® : " + message);
-	};
-	
-	public void receiveVoice(String message) {
-		System.out.println("»ó´ë¹æ ¸ñ¼Ò¸® : " + message);
-	};
-	
-	public void hangUp() {
-		System.out.println("ÀüÈ­¸¦ ²÷½À´Ï´Ù.");
-	};
-}
+package test.ch07;		
+		
+public class phone {		
+	public String model;	
+	public String color;	
+		
+	public phone() {	
+		System.out.println("ë¶€ëª¨ ìƒì„±ì ì‹¤í–‰");
+	}	
+		
+	public void bell() {	
+		System.out.println("ë²¨ì´ ìš¸ë¦½ë‹ˆë‹¤.");
+	};	
+		
+	public void sendVoice(String message) {	
+		System.out.println("ìê¸° ëª©ì†Œë¦¬ : " + message);
+	};	
+		
+	public void receiveVoice(String message) {	
+		System.out.println("ìƒëŒ€ë°© ëª©ì†Œë¦¬ : " + message);
+	};	
+		
+	public void hangUp() {	
+		System.out.println("ì „í™”ë¥¼ ëŠìŠµë‹ˆë‹¤.");
+	};	
+}		

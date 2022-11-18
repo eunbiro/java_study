@@ -1,45 +1,45 @@
-package test.ch06;
-
-public class Car2 {
-
-	// ÀÎ½ºÅÏ½º ÇÊµå
-	int speed;
-//	static int test;
-	
-	// ÀÎ½ºÅÏ½º ¸Ş¼Òµå
-	void run() {
-		System.out.println(this.speed + "À¸·Î ´Ş¸³´Ï´Ù.");
-	}
-	
-	void run2() {
-		this.run();
-		System.out.println(this.speed + "À¸·Î ´Ş¸³´Ï´Ù.");
-	}
-	
-	// Á¤Àû ºí·Ï
-	static {
-//		this.speed = 200;	// static ºí·°¿¡¼­´Â ÀÎ½ºÅÏ½º º¯¼ö¿¡ Á÷Á¢Á¢±Ù ºÒ°¡
-//		this.run();			// static ºí·°¿¡¼­´Â ÀÎ½ºÅÏ½º ¸Ş¼Òµå¿¡ Á÷Á¢Á¢±Ù ºÒ°¡
-	}
-	
-	// Á¤Àû(static) ¸Ş¼Òµå
-	static void simulate() {
-//		this.speed = 200;	// static ¸Ş¼Òµå¿¡¼­´Â ÀÎ½ºÅÏ½º º¯¼ö¿¡ Á÷Á¢Á¢±Ù ºÒ°¡
-//		this.run();			// static ¸Ş¼Òµå¿¡¼­´Â ÀÎ½ºÅÏ½º ¸Ş¼Òµå¿¡ Á÷Á¢Á¢±Ù ºÒ°¡
-		
-		Car2 myCar = new Car2();
-		
-		myCar.speed = 200;	// °´Ã¼¸¦ »ı¼º ÈÄ °£Á¢ÀûÀ¸·Î Á¢±Ù°¡´É
-		myCar.run();
-	}
-	
-	public static void main(String[] args) {
-		simulate();
-		
-		Car2 myCar = new Car2();
-		
-		myCar.speed = 60;
-		myCar.run();
-	}
-
-}
+package test.ch06;					
+					
+public class Car2 {					
+					
+	// ì¸ìŠ¤í„´ìŠ¤ í•„ë“œ				
+	int speed;				
+//	static int test;				
+					
+	// ì¸ìŠ¤í„´ìŠ¤ ë©”ì†Œë“œ				
+	void run() {				
+		System.out.println(this.speed + "ìœ¼ë¡œ ë‹¬ë¦½ë‹ˆë‹¤.");			
+	}				
+					
+	void run2() {				
+		this.run();			
+		System.out.println(this.speed + "ìœ¼ë¡œ ë‹¬ë¦½ë‹ˆë‹¤.");			
+	}				
+					
+	// ì •ì  ë¸”ë¡				
+	static {				
+//		this.speed = 200;	// static ë¸”ëŸ­ì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì— ì§ì ‘ì ‘ê·¼ ë¶ˆê°€		
+//		this.run();			// static ë¸”ëŸ­ì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©”ì†Œë“œì— ì§ì ‘ì ‘ê·¼ ë¶ˆê°€
+	}				
+					
+	// ì •ì (static) ë©”ì†Œë“œ				
+	static void simulate() {				
+//		this.speed = 200;	// static ë©”ì†Œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì— ì§ì ‘ì ‘ê·¼ ë¶ˆê°€		
+//		this.run();			// static ë©”ì†Œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©”ì†Œë“œì— ì§ì ‘ì ‘ê·¼ ë¶ˆê°€
+					
+		Car2 myCar = new Car2();			
+					
+		myCar.speed = 200;	// ê°ì²´ë¥¼ ìƒì„± í›„ ê°„ì ‘ì ìœ¼ë¡œ ì ‘ê·¼ê°€ëŠ¥		
+		myCar.run();			
+	}				
+					
+	public static void main(String[] args) {				
+		simulate();			
+					
+		Car2 myCar = new Car2();			
+					
+		myCar.speed = 60;			
+		myCar.run();			
+	}				
+					
+}					

@@ -1,39 +1,39 @@
-package test.ch06;
-
-public class Calculator {
-	// ¸Ş¼Òµå ¿À¹ö·Îµù : °°Àº ÀÌ¸§ÀÇ ¸Ş¼Òµå ¿©·¯°³¸¦ ¸¸µç´Ù.
-	// ¡Ú¸Å°³º¯¼öÀÇ ¼ø¼­, °¹¼ö, Å¸ÀÔ Áß ÇÏ³ª°¡ ´Ş¶ó¾ß ÇÑ´Ù.
-	
-	double areaRectangle(double width) {
+package test.ch06;		
+		
+public class Calculator {		
+	// ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”© : ê°™ì€ ì´ë¦„ì˜ ë©”ì†Œë“œ ì—¬ëŸ¬ê°œë¥¼ ë§Œë“ ë‹¤.	
+	// â˜…ë§¤ê°œë³€ìˆ˜ì˜ ìˆœì„œ, ê°¯ìˆ˜, íƒ€ì… ì¤‘ í•˜ë‚˜ê°€ ë‹¬ë¼ì•¼ í•œë‹¤.	
+		
+	double areaRectangle(double width) {	
 		return width * width;
-	}
-	
-	
-	double areaRectangle(double width, double height) {
+	}	
+		
+		
+	double areaRectangle(double width, double height) {	
 		return width * height;
-	}
-	
-	
-	
-	/*
-	// ¸®ÅÏ °ªÀÌ ¾ø´Â ¸Ş¼Òµå ¼±¾ğ
-	void powerOn() {
-		System.out.println("Àü¿øÀ» ÄÕ´Ï´Ù.");
+	}	
+		
+		
+		
+	/*	
+	// ë¦¬í„´ ê°’ì´ ì—†ëŠ” ë©”ì†Œë“œ ì„ ì–¸	
+	void powerOn() {	
+		System.out.println("ì „ì›ì„ ì¼­ë‹ˆë‹¤.");
 //		return;
-	}
-	void powerOff() {
-		System.out.println("Àü¿øÀ» ²ü´Ï´Ù.");
-	}
-	
-	int plus(int x, int y) {
+	}	
+	void powerOff() {	
+		System.out.println("ì „ì›ì„ ë•ë‹ˆë‹¤.");
+	}	
+		
+	int plus(int x, int y) {	
 		int result = x + y;
 		return result;
-	}
-	
-	// doubleÇüÀ¸·Î ¸®ÅÏ°ªÀÌ ÀÖ´Â ¸Ş¼Òµå
-	double divide(int x, int y) {
+	}	
+		
+	// doubleí˜•ìœ¼ë¡œ ë¦¬í„´ê°’ì´ ìˆëŠ” ë©”ì†Œë“œ	
+	double divide(int x, int y) {	
 		double result = (double)x / (double)y;
 		return result;
-	}
-	*/
-}
+	}	
+	*/	
+}		

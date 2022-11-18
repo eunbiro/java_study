@@ -1,30 +1,30 @@
-package test.ch03;
-
-public class ConditinalOperator {
-
-	public static void main(String[] args) {
-		
-//		int score = 85;
-//		char grade = (score > 90) ? 'A' : ((score > 80) ? 'B' : 'C');
-//		System.out.println(score + "Á¡Àº" + grade + "µî±ÞÀÔ´Ï´Ù.");
-		
-	       int fahrenheit = 100;
-	       float celcius = (((int)(((float)5/9)*(fahrenheit - 32) * 1000))%10) >= 5 ?
+package test.ch03;						
+						
+public class ConditinalOperator {						
+						
+	public static void main(String[] args) {					
+						
+//		int score = 85;				
+//		char grade = (score > 90) ? 'A' : ((score > 80) ? 'B' : 'C');				
+//		System.out.println(score + "ì ì€" + grade + "ë“±ê¸‰ìž…ë‹ˆë‹¤.");				
+						
+	       int fahrenheit = 100;					
+	       float celcius = (((int)(((float)5/9)*(fahrenheit - 32) * 1000))%10) >= 5 ?					
 	    		   			(((int)(((float)5/9)*(fahrenheit - 32) * 1000)) + 1) / 1000f : 
 	    		   			((int)(((float)5/9)*(fahrenheit - 32) * 1000)) / 1000f;
-	       
-	       System.out.println("Fahrenheit:"+fahrenheit);
-	       System.out.println("Celcius:"+celcius);
-		
-//		char ch = 'A';
-//        char lowerCase = (ch >= 65 && ch <= 90) ? (char)(ch + 32) : ch;
-//        System.out.println("ch:"+ch);
-//        System.out.println("ch to lowerCase:"+lowerCase);
-//
-//        int num = 0;
-//        System.out.println((num > 0 ? "¾ç¼ö" : num < 0 ? "À½¼ö" : 0));
-
-
-	}
-
-}
+	       					
+	       System.out.println("Fahrenheit:"+fahrenheit);					
+	       System.out.println("Celcius:"+celcius);					
+						
+//		char ch = 'A';				
+//        char lowerCase = (ch >= 65 && ch <= 90) ? (char)(ch + 32) : ch;						
+//        System.out.println("ch:"+ch);						
+//        System.out.println("ch to lowerCase:"+lowerCase);						
+//						
+//        int num = 0;						
+//        System.out.println((num > 0 ? "ì–‘ìˆ˜" : num < 0 ? "ìŒìˆ˜" : 0));						
+						
+						
+	}					
+						
+}						

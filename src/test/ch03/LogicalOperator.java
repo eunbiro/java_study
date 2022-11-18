@@ -1,30 +1,30 @@
-package test.ch03;
-
-public class LogicalOperator {
-
-	public static void main(String[] args) {
-		int charCode = 'A';
-		
+package test.ch03;			
+			
+public class LogicalOperator {			
+			
+	public static void main(String[] args) {		
+		int charCode = 'A';	
+			
 		if ((charCode >= 65) & (charCode <= 90)) {	// 65~90
-			System.out.println("´ë¹®ÀÚÀÔ´Ï´Ù.");
-		}
-		
+			System.out.println("ëŒ€ë¬¸ìžìž…ë‹ˆë‹¤.");
+		}	
+			
 		if ((charCode >= 97) & (charCode <= 122)) {	// 97~122
-			System.out.println("¼Ò¹®ÀÚÀÔ´Ï´Ù");
-		}
-		
+			System.out.println("ì†Œë¬¸ìžìž…ë‹ˆë‹¤");
+		}	
+			
 		if ((charCode >= 48) & (charCode <= 57)) {	// 48~57
-			System.out.println("0-9 ¼ýÀÚÀÔ´Ï´Ù.");
-		}
-		
-		int value = 6;
-		
-		if ((value % 2 == 0) | (value % 3 == 0)) {
-			System.out.println("2ÀÇ 3ÀÇ");
-		}
-		
-		if ((value % 2 == 0) || (value % 3 == 0)) {
-			System.out.println("2ÀÇ 3ÀÇ");
-		}
-	}
-}
+			System.out.println("0-9 ìˆ«ìžìž…ë‹ˆë‹¤.");
+		}	
+			
+		int value = 6;	
+			
+		if ((value % 2 == 0) | (value % 3 == 0)) {	
+			System.out.println("2ì˜ 3ì˜");
+		}	
+			
+		if ((value % 2 == 0) || (value % 3 == 0)) {	
+			System.out.println("2ì˜ 3ì˜");
+		}	
+	}		
+}			

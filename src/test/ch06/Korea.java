@@ -1,20 +1,20 @@
-package test.ch06;
-
-public class Korea {
-	// »ó¼ö´Â ºÒº¯ÀÇ °ª(final), °øÀ¯ÇØ¼­ »ç¿ë °¡´É(static)
-	// ex) ¿øÁÖÀ² : 3.14... Áö±¸ÀÇ ¹«°Ô
-	
-	// final ÇÊµå(ÀúÀå µÈ °ªµéÀ» º¯°æÇÒ ¼ö ¾ø´Ù. ÃÖÁ¾°ª)
-	// final ÇÊµå´Â ÃÊ±â°ªÀ» ¹«Á¶°Ç Áà¾ßÇÑ´Ù.(ÇÊµå ¼±¾ğ½Ã ÁÖ°Å³ª È¤Àº »ı¼ºÀÚ¿¡¼­ Áà¾ß ÇÑ´Ù.)
-	final String nation = "´ëÇÑ¹Î±¹";
-	final String ssn;	// ÁÖ¹Î¹øÈ£
-	
-	// ÀÎ½ºÅÏ½º ÇÊµå
-	String name;
-	
-	// »ı¼ºÀÚ
-	Korea(String ssn, String name) {
+package test.ch06;		
+		
+public class Korea {		
+	// ìƒìˆ˜ëŠ” ë¶ˆë³€ì˜ ê°’(final), ê³µìœ í•´ì„œ ì‚¬ìš© ê°€ëŠ¥(static)	
+	// ex) ì›ì£¼ìœ¨ : 3.14... ì§€êµ¬ì˜ ë¬´ê²Œ	
+		
+	// final í•„ë“œ(ì €ì¥ ëœ ê°’ë“¤ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤. ìµœì¢…ê°’)	
+	// final í•„ë“œëŠ” ì´ˆê¸°ê°’ì„ ë¬´ì¡°ê±´ ì¤˜ì•¼í•œë‹¤.(í•„ë“œ ì„ ì–¸ì‹œ ì£¼ê±°ë‚˜ í˜¹ì€ ìƒì„±ìì—ì„œ ì¤˜ì•¼ í•œë‹¤.)	
+	final String nation = "ëŒ€í•œë¯¼êµ­";	
+	final String ssn;	// ì£¼ë¯¼ë²ˆí˜¸
+		
+	// ì¸ìŠ¤í„´ìŠ¤ í•„ë“œ	
+	String name;	
+		
+	// ìƒì„±ì	
+	Korea(String ssn, String name) {	
 		this.ssn = ssn;
 		this.name = name;
-	}
-}
+	}	
+}		

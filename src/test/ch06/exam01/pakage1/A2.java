@@ -1,20 +1,20 @@
-package test.ch06.exam01.pakage1;
-
-// Å¬·¡½º´Â public, default Á¢±ÙÁ¦ÇÑÀÚ¸¦ °¡Áú ¼ö ÀÖ´Ù.
-public class A2 {
-	A2 a3 = new A2("¹®ÀÚ¿­");		// private °°Àº class ¾È¿¡¼­¸¸ »ç¿ë °¡´É
-	
-	
-	public A2(boolean b) {
-		
-	}
-	
-	A2(int b) {
-		
-	}
-	
-	private A2(String s) {
-		
-	}
-	
-}
+package test.ch06.exam01.pakage1;			
+			
+// í´ë˜ìŠ¤ëŠ” public, default ì ‘ê·¼ì œí•œìë¥¼ ê°€ì§ˆ ìˆ˜ ìˆë‹¤.			
+public class A2 {			
+	A2 a3 = new A2("ë¬¸ìì—´");		// private ê°™ì€ class ì•ˆì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥
+			
+			
+	public A2(boolean b) {		
+			
+	}		
+			
+	A2(int b) {		
+			
+	}		
+			
+	private A2(String s) {		
+			
+	}		
+			
+}			

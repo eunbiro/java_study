@@ -1,16 +1,16 @@
-package test.ch06.hyundai;
-
-import test.ch06.hankook.SnowTire;
-import test.ch06.kumho.AllSeasonTire;
-
-public class Car {
-	// ´Ù¸¥ ÆĞÅ°Áö¿¡ ÀÖ´Â class´Â ¹İµå½Ã ÆĞÅ°Áö import¸¦ ÇØÁà¾ßÇÑ´Ù.
+package test.ch06.hyundai;	
+	
+import test.ch06.hankook.SnowTire;	
+import test.ch06.kumho.AllSeasonTire;	
+	
+public class Car {	
+	// ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì— ìˆëŠ” classëŠ” ë°˜ë“œì‹œ íŒ¨í‚¤ì§€ importë¥¼ í•´ì¤˜ì•¼í•œë‹¤.
 	SnowTire snowT = new SnowTire();
 	AllSeasonTire allT = new AllSeasonTire();
 	
-	// °°Àº ÆĞÅ°Áö¿¡ ÀÖ´Â class´Â import ¾ÈÇØÁàµµ µÊ
+	// ê°™ì€ íŒ¨í‚¤ì§€ì— ìˆëŠ” classëŠ” import ì•ˆí•´ì¤˜ë„ ë¨
 	Test test = new Test();
 	
-	// ÀÌ·¸°Ô ¾²¸é import´Â µüÈ÷ ¾ÈÇØÁàµµ µÊ
+	// ì´ë ‡ê²Œ ì“°ë©´ importëŠ” ë”±íˆ ì•ˆí•´ì¤˜ë„ ë¨
 	test.ch06.hankook.Tire tire1 = new test.ch06.hankook.Tire();
-}
+}	

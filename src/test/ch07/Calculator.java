@@ -1,8 +1,8 @@
-package test.ch07;
-
-public class Calculator {
-	public double areaCircle(double r) {
-		System.out.println("Calculator ∞¥√º¿« areaCircle() Ω««‡");
+package test.ch07;		
+		
+public class Calculator {		
+	public double areaCircle(double r) {	
+		System.out.println("Calculator Í∞ùÏ≤¥Ïùò areaCircle() Ïã§Ìñâ");
 		return 3.14159 * r * r;
-	}
-}
+	}	
+}		

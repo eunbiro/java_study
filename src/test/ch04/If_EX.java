@@ -1,160 +1,160 @@
-package test.ch04;
-
-public class If_EX {
-
-	public static void main(String[] args) {
-//		int score = 75;
-//		String name = "Àººñ";
-//		
-//		if (score >= 90) {
-//			System.out.println("90Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-//			if (name.equals(name)) {
-//				System.out.println(name + "ÀÔ´Ï´Ù.");
-//			}
-//		} else if (score >= 80) {
-//			System.out.println("80Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-//			if (name.equals(name)) {
-//				System.out.println(name + "ÀÔ´Ï´Ù.");
-//			}
-//		} else if (score >= 70) {
-//			System.out.println("70Á¡ ÀÌ»óÀÔ´Ï´Ù.");
-//			if (name.equals(name)) {
-//				System.out.println(name + "ÀÔ´Ï´Ù.");
-//			}
-//		} else {
-//			System.out.println("70Á¡ ¹Ì¸¸ÀÔ´Ï´Ù.");
-//			if (name.equals(name)) {
-//				System.out.println(name + "ÀÔ´Ï´Ù.");
-//			}
-//		}
-//		
-//		int num = (int)(Math.random() * 6) + 1;
-//		
-//		if (num == 1) {
-//			System.out.println("1¹ø");
-//		} else if (num == 2) {
-//			System.out.println("2¹ø");
-//		} else if (num == 3) {
-//			System.out.println("3¹ø");
-//		} else if (num == 4) {
-//			System.out.println("4¹ø");
-//		} else if (num == 5) {
-//			System.out.println("5¹ø");
-//		} else {
-//			System.out.println("6¹ø");
-//		}
-//		
-//		// byte, char, short, int, long
-//		// String
-//		char grade = 'B';
-//		
-//		switch (grade) {
-//		case 'A':
-//			System.out.println("1¹ø");
-//			break;
-//		case 'B':
-//			System.out.println("2¹ø");
-//			break;
-//		case 'C':
-//			System.out.println("3¹ø");
-//			break;
-//		case 'D':
-//			System.out.println("4¹ø");
-//			break;
-//		case 'E':
-//			System.out.println("5¹ø");
-//			break;
-//		default:
-//			break;
-//		}
-//		
-//		char ch = 'A';
-//		
-//		if (ch == '' || ch == ' ')
-		
-//		int sum = 0;
-//		for (int i = 1; i <= 100; i++) {
-//			
-//			if (i % 3 == 0) {
-//				sum += i;
-//			}
-//		}
-//		System.out.println(sum);
-		
-//		int sum = 0;
-//		for (int i = 1; i <= 20; i++) {
-//			
-//			if (!((i % 2) == 0 || (i % 3) == 0)) {
-//				sum += i;
-//			}
-//		}
-//		System.out.println(sum);
-		
-//		while(true) {
-//			int eye1 = (int)(Math.random() * 6) + 1;
-//			int eye2 = (int)(Math.random() * 6) + 1;
-//			
-//			if (eye1 + eye2 == 5) {
-//				System.out.println(eye1+ ", " + eye2);
-//				break;
-//			}
-//		}
-//		int x;
-//		int y;
-//		int sum = 0;
-//		
-//		for (int i = 1; i <= 10; i++) {
-//			for (int j = 1; j <= 10; j++) {
-//				x = 4 * i;
-//				y = 5 * j;
-//				if (x + y == 60) {
+package test.ch04;					
+					
+public class If_EX {					
+					
+	public static void main(String[] args) {				
+//		int score = 75;			
+//		String name = "ì€ë¹„";			
+//					
+//		if (score >= 90) {			
+//			System.out.println("90ì  ì´ìƒì…ë‹ˆë‹¤.");		
+//			if (name.equals(name)) {		
+//				System.out.println(name + "ì…ë‹ˆë‹¤.");	
+//			}		
+//		} else if (score >= 80) {			
+//			System.out.println("80ì  ì´ìƒì…ë‹ˆë‹¤.");		
+//			if (name.equals(name)) {		
+//				System.out.println(name + "ì…ë‹ˆë‹¤.");	
+//			}		
+//		} else if (score >= 70) {			
+//			System.out.println("70ì  ì´ìƒì…ë‹ˆë‹¤.");		
+//			if (name.equals(name)) {		
+//				System.out.println(name + "ì…ë‹ˆë‹¤.");	
+//			}		
+//		} else {			
+//			System.out.println("70ì  ë¯¸ë§Œì…ë‹ˆë‹¤.");		
+//			if (name.equals(name)) {		
+//				System.out.println(name + "ì…ë‹ˆë‹¤.");	
+//			}		
+//		}			
+//					
+//		int num = (int)(Math.random() * 6) + 1;			
+//					
+//		if (num == 1) {			
+//			System.out.println("1ë²ˆ");		
+//		} else if (num == 2) {			
+//			System.out.println("2ë²ˆ");		
+//		} else if (num == 3) {			
+//			System.out.println("3ë²ˆ");		
+//		} else if (num == 4) {			
+//			System.out.println("4ë²ˆ");		
+//		} else if (num == 5) {			
+//			System.out.println("5ë²ˆ");		
+//		} else {			
+//			System.out.println("6ë²ˆ");		
+//		}			
+//					
+//		// byte, char, short, int, long			
+//		// String			
+//		char grade = 'B';			
+//					
+//		switch (grade) {			
+//		case 'A':			
+//			System.out.println("1ë²ˆ");		
+//			break;		
+//		case 'B':			
+//			System.out.println("2ë²ˆ");		
+//			break;		
+//		case 'C':			
+//			System.out.println("3ë²ˆ");		
+//			break;		
+//		case 'D':			
+//			System.out.println("4ë²ˆ");		
+//			break;		
+//		case 'E':			
+//			System.out.println("5ë²ˆ");		
+//			break;		
+//		default:			
+//			break;		
+//		}			
+//					
+//		char ch = 'A';			
+//					
+//		if (ch == '' || ch == ' ')			
+					
+//		int sum = 0;			
+//		for (int i = 1; i <= 100; i++) {			
+//					
+//			if (i % 3 == 0) {		
+//				sum += i;	
+//			}		
+//		}			
+//		System.out.println(sum);			
+					
+//		int sum = 0;			
+//		for (int i = 1; i <= 20; i++) {			
+//					
+//			if (!((i % 2) == 0 || (i % 3) == 0)) {		
+//				sum += i;	
+//			}		
+//		}			
+//		System.out.println(sum);			
+					
+//		while(true) {			
+//			int eye1 = (int)(Math.random() * 6) + 1;		
+//			int eye2 = (int)(Math.random() * 6) + 1;		
+//					
+//			if (eye1 + eye2 == 5) {		
+//				System.out.println(eye1+ ", " + eye2);	
+//				break;	
+//			}		
+//		}			
+//		int x;			
+//		int y;			
+//		int sum = 0;			
+//					
+//		for (int i = 1; i <= 10; i++) {			
+//			for (int j = 1; j <= 10; j++) {		
+//				x = 4 * i;	
+//				y = 5 * j;	
+//				if (x + y == 60) {	
 //					System.out.println("(" + i + ", " + j + ")");
-//				}
-//			}
-//		}
-		
-		
-//		for (int i = 1; i <= 6; i++) {
-//			for (int j = 1; j <= 6; j++) {
-//				if (i + j == 6) {
+//				}	
+//			}		
+//		}			
+					
+					
+//		for (int i = 1; i <= 6; i++) {			
+//			for (int j = 1; j <= 6; j++) {		
+//				if (i + j == 6) {	
 //					System.out.println("(" + i + ", " + j + ")");
-//				}
-//			}
-//		}
-		
-//		int num = 12345;
-//		int sum = 0;
-//		
-//		for (int i = 1; i <= 5; i++) {
-//			
-//		}
-//		int sum = 1;
-//		int sum2 = 1;
-//		
-//		for (int i = 1; i <= 10; i++) {
-//			System.out.println(sum + ", " + sum2);
-//			sum += sum2;
-//			sum2 += sum;
-//		}
-//		int num = 12345;
-//		int sum = 0;
-//		
-//		for (int i = 1; i <= 5; i++) {
-//			sum += num%10;
-//			num /= 10;
-//		}
-//		System.out.println(sum);
-//		String str = "";
-//		for (int i = 1; i <= 2; i++) {
-//			str += '*';
-//			System.out.println(str);
-//			for (int j = 1; j <= 2; ++j) {
-//				str += '*';
-//				System.out.println(str);
-//			}
-//		}
-		
-		System.out.println();
-	}
-
-}
+//				}	
+//			}		
+//		}			
+					
+//		int num = 12345;			
+//		int sum = 0;			
+//					
+//		for (int i = 1; i <= 5; i++) {			
+//					
+//		}			
+//		int sum = 1;			
+//		int sum2 = 1;			
+//					
+//		for (int i = 1; i <= 10; i++) {			
+//			System.out.println(sum + ", " + sum2);		
+//			sum += sum2;		
+//			sum2 += sum;		
+//		}			
+//		int num = 12345;			
+//		int sum = 0;			
+//					
+//		for (int i = 1; i <= 5; i++) {			
+//			sum += num%10;		
+//			num /= 10;		
+//		}			
+//		System.out.println(sum);			
+//		String str = "";			
+//		for (int i = 1; i <= 2; i++) {			
+//			str += '*';		
+//			System.out.println(str);		
+//			for (int j = 1; j <= 2; ++j) {		
+//				str += '*';	
+//				System.out.println(str);	
+//			}		
+//		}			
+					
+		System.out.println();			
+	}				
+					
+}					

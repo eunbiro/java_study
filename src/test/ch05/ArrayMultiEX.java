@@ -1,74 +1,74 @@
-package test.ch05;
-
-public class ArrayMultiEX {
-
-	public static void main(String[] args) {
-//		int[] scores = { 10, 90, 10 };
-		
+package test.ch05;				
+				
+public class ArrayMultiEX {				
+				
+	public static void main(String[] args) {			
+//		int[] scores = { 10, 90, 10 };		
+				
 		int[][] scores 		= {
 				{ 80, 90, 96 },
 				{ 76, 88 }
-		};
-		int[][] mathScores 	= new int[2][3];
-		
-		for (int i = 0; i < mathScores.length; i++) {
-			for (int j = 0; j < mathScores[i].length; j++) {
-				System.out.println("¼öÇÐÁ¡¼ö : " + mathScores[i][j]);
+		};		
+		int[][] mathScores 	= new int[2][3];	
+				
+		for (int i = 0; i < mathScores.length; i++) {		
+			for (int j = 0; j < mathScores[i].length; j++) {	
+				System.out.println("ìˆ˜í•™ì ìˆ˜ : " + mathScores[i][j]);
 //				mathScores[i][j] = 80;
-			}
-		}
-		/*
-		int[][] mathScores = {
+			}	
+		}		
+		/*		
+		int[][] mathScores = {		
 				{ 80, 90, 96 },
 				{ 76, 88 }
-		};
-		*/
-		mathScores[0][0] = 80;
-		mathScores[0][1] = 81;
-		mathScores[0][2] = 82;
-		mathScores[1][0] = 83;
-		mathScores[1][1] = 84;
-		mathScores[1][2] = 85;
-		
-		System.out.println("1Â÷¿ø ¹è¿­ ±æÀÌ(¹ÝÀÇ ¼ö) : " + scores.length);
-		System.out.println("2Â÷¿ø ¹è¿­ ±æÀÌ(Ã¹ ¹øÂ° ¹ÝÀÇ ¼ö) : " + scores[0].length);
-		System.out.println("2Â÷¿ø ¹è¿­ ±æÀÌ(µÎ ¹øÂ° ¹ÝÀÇ ¼ö) : " + scores[1].length);
-		
-		System.out.println("Ã¹ ¹øÂ° ¹ÝÀÇ ¼¼ ¹øÂ° ÇÐ»ý : " + scores[0][2]);
-		System.out.println("µÎ ¹øÂ° ¹ÝÀÇ µÎ ¹øÂ° ÇÐ»ý : " + scores[1][1]);
-		
-		// Ã¹ ¹øÂ° ¹ÝÀÇ Æò±Õ Á¡¼ö
-		int class1Sum = 0;
-		for (int i = 0; i < scores[0].length; i++) {
-			class1Sum += scores[0][i];
-		}
-		double class1Avg = (double)class1Sum / scores[0].length;
-		System.out.println("1¹ÝÀÇ ÃÑ ÇÕÀº " + class1Sum + "Á¡ÀÌ°í Æò±ÕÀº " + class1Avg);
-		
-		// µÎ ¹øÂ° ¹ÝÀÇ Æò±Õ Á¡¼ö
-		int class2Sum = 0;
-		for (int j = 0; j < scores[1].length; j++) {
-			class2Sum += scores[1][j];
-		}
-		double class2Avg = (double)class2Sum / scores[1].length;
-		System.out.println("2¹ÝÀÇ ÃÑ ÇÕÀº " + class2Sum + "Á¡ÀÌ°í Æò±ÕÀº " + class2Avg);
-		
-		// ÀüÃ¼ ÇÐ»ýÀÇ Æò±ÕÁ¡¼ö
-		int totalStudent = 0;
-		int totalSum = 0;
-		
-		for (int i = 0; i < scores.length; i++) {
-			totalStudent += scores[i].length;	// ÇÐ»ý ¼ö
-			for (int j = 0; j < scores[i].length; j++) {
+		};		
+		*/		
+		mathScores[0][0] = 80;		
+		mathScores[0][1] = 81;		
+		mathScores[0][2] = 82;		
+		mathScores[1][0] = 83;		
+		mathScores[1][1] = 84;		
+		mathScores[1][2] = 85;		
+				
+		System.out.println("1ì°¨ì› ë°°ì—´ ê¸¸ì´(ë°˜ì˜ ìˆ˜) : " + scores.length);		
+		System.out.println("2ì°¨ì› ë°°ì—´ ê¸¸ì´(ì²« ë²ˆì§¸ ë°˜ì˜ ìˆ˜) : " + scores[0].length);		
+		System.out.println("2ì°¨ì› ë°°ì—´ ê¸¸ì´(ë‘ ë²ˆì§¸ ë°˜ì˜ ìˆ˜) : " + scores[1].length);		
+				
+		System.out.println("ì²« ë²ˆì§¸ ë°˜ì˜ ì„¸ ë²ˆì§¸ í•™ìƒ : " + scores[0][2]);		
+		System.out.println("ë‘ ë²ˆì§¸ ë°˜ì˜ ë‘ ë²ˆì§¸ í•™ìƒ : " + scores[1][1]);		
+				
+		// ì²« ë²ˆì§¸ ë°˜ì˜ í‰ê·  ì ìˆ˜		
+		int class1Sum = 0;		
+		for (int i = 0; i < scores[0].length; i++) {		
+			class1Sum += scores[0][i];	
+		}		
+		double class1Avg = (double)class1Sum / scores[0].length;		
+		System.out.println("1ë°˜ì˜ ì´ í•©ì€ " + class1Sum + "ì ì´ê³  í‰ê· ì€ " + class1Avg);		
+				
+		// ë‘ ë²ˆì§¸ ë°˜ì˜ í‰ê·  ì ìˆ˜		
+		int class2Sum = 0;		
+		for (int j = 0; j < scores[1].length; j++) {		
+			class2Sum += scores[1][j];	
+		}		
+		double class2Avg = (double)class2Sum / scores[1].length;		
+		System.out.println("2ë°˜ì˜ ì´ í•©ì€ " + class2Sum + "ì ì´ê³  í‰ê· ì€ " + class2Avg);		
+				
+		// ì „ì²´ í•™ìƒì˜ í‰ê· ì ìˆ˜		
+		int totalStudent = 0;		
+		int totalSum = 0;		
+				
+		for (int i = 0; i < scores.length; i++) {		
+			totalStudent += scores[i].length;	// í•™ìƒ ìˆ˜
+			for (int j = 0; j < scores[i].length; j++) {	
 				totalSum += scores[i][j];
-			}
-		}
-		double totalAvg = (double) totalSum / totalStudent;
-		
-		System.out.println("ÃÑ ÇÐ»ý ¼ö´Â " + totalStudent + "¸í");
-		System.out.println("ÃÑ ÇÕÀº " + totalSum + "Á¡");
-		System.out.println("ÃÑ Æò±ÕÀº " + totalAvg + "Á¡");
-		
-	}
-
-}
+			}	
+		}		
+		double totalAvg = (double) totalSum / totalStudent;		
+				
+		System.out.println("ì´ í•™ìƒ ìˆ˜ëŠ” " + totalStudent + "ëª…");		
+		System.out.println("ì´ í•©ì€ " + totalSum + "ì ");		
+		System.out.println("ì´ í‰ê· ì€ " + totalAvg + "ì ");		
+				
+	}			
+				
+}				

@@ -1,47 +1,47 @@
-package test.ch05;
-
-import java.util.Calendar;
-
-public class WeekEX {
-
-	public static void main(String[] args) {
-		Week today = null;
-		
-		Calendar cal = Calendar.getInstance();
-		
-		// ¿äÀÏÀ» ¼ıÀÚ·Î ¾ò´Â´Ù.
-		int week = cal.get(Calendar.DAY_OF_WEEK);
-		
-		// ¼ıÀÚ¸¦ ¿­°Å »ó¼ö·Î º¯È¯ÇØ¼­ º¯¼ö¿¡ ´ëÀÔ.
-		switch (week) {
-		case 1:
+package test.ch05;			
+			
+import java.util.Calendar;			
+			
+public class WeekEX {			
+			
+	public static void main(String[] args) {		
+		Week today = null;	
+			
+		Calendar cal = Calendar.getInstance();	
+			
+		// ìš”ì¼ì„ ìˆ«ìë¡œ ì–»ëŠ”ë‹¤.	
+		int week = cal.get(Calendar.DAY_OF_WEEK);	
+			
+		// ìˆ«ìë¥¼ ì—´ê±° ìƒìˆ˜ë¡œ ë³€í™˜í•´ì„œ ë³€ìˆ˜ì— ëŒ€ì….	
+		switch (week) {	
+		case 1:	
 			today = Week.SUNDAY;
 			break;
-		case 2:
+		case 2:	
 			today = Week.MONDAY;
 			break;
-		case 3:
+		case 3:	
 			today = Week.TUESDAY;
 			break;
-		case 4:
+		case 4:	
 			today = Week.WEDNESDAY;
 			break;
-		case 5:
+		case 5:	
 			today = Week.THURSDAY;
 			break;
-		case 6:
+		case 6:	
 			today = Week.FRIDAY;
 			break;
-		case 7:
+		case 7:	
 			today = Week.SATURDAY;
 			break;
-		}
-		
-		if (today == Week.SUNDAY) {
-			System.out.println("ÀÏ¿äÀÏ ÀÔ´Ï´Ù.");
-		} else {
-			System.out.println("ÀÏ¿äÀÏÀÌ ¾Æ´Õ´Ï´Ù.");
-		}
-	}
-
-}
+		}	
+			
+		if (today == Week.SUNDAY) {	
+			System.out.println("ì¼ìš”ì¼ ì…ë‹ˆë‹¤.");
+		} else {	
+			System.out.println("ì¼ìš”ì¼ì´ ì•„ë‹™ë‹ˆë‹¤.");
+		}	
+	}		
+			
+}			

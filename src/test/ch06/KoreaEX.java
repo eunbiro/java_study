@@ -1,17 +1,17 @@
-package test.ch06;
-
-public class KoreaEX {
-
-	public static void main(String[] args) {
-		Korea k1 = new Korea("123456-1234567", "°¨ÀÚ¹Ù");
-		k1.name = "³ëÀººñ";
-//		k1.nation = "¹Ì±¹";		// finalÀº º¯°æºÒ°¡
-		
-		System.out.println(k1.name);
-		System.out.println(k1.nation);
-		System.out.println(k1.ssn);
-		
-		
-	}
-
-}
+package test.ch06;				
+				
+public class KoreaEX {				
+				
+	public static void main(String[] args) {			
+		Korea k1 = new Korea("123456-1234567", "ê°ìë°”");		
+		k1.name = "ë…¸ì€ë¹„";		
+//		k1.nation = "ë¯¸êµ­";		// finalì€ ë³€ê²½ë¶ˆê°€
+				
+		System.out.println(k1.name);		
+		System.out.println(k1.nation);		
+		System.out.println(k1.ssn);		
+				
+				
+	}			
+				
+}				

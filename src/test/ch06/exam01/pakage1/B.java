@@ -1,15 +1,15 @@
-package test.ch06.exam01.pakage1;
-
-public class B {
-	public void method() {
-		A a = new A();
+package test.ch06.exam01.pakage1;				
 				
-		a.field1 = 1;		// ½ÇÇà °¡´É
-		a.field2 = 1;		// ½ÇÇà °¡´É
-		a.field3 = 1;		// private·Î ¼±¾ğÇÑ º¯¼ö¶ó ½ÇÇà ºÒ°¡
-		a.method1();		// ½ÇÇà °¡´É
-		a.method2();		// ½ÇÇà °¡´É
-		a.method3();		// private·Î ¼±¾ğÇÑ ¸Ş¼­µå¶ó ½ÇÇà ºÒ°¡
-	}
-	
-}
+public class B {				
+	public void method() {			
+		A a = new A();		
+				
+		a.field1 = 1;		// ì‹¤í–‰ ê°€ëŠ¥
+		a.field2 = 1;		// ì‹¤í–‰ ê°€ëŠ¥
+		a.field3 = 1;		// privateë¡œ ì„ ì–¸í•œ ë³€ìˆ˜ë¼ ì‹¤í–‰ ë¶ˆê°€
+		a.method1();		// ì‹¤í–‰ ê°€ëŠ¥
+		a.method2();		// ì‹¤í–‰ ê°€ëŠ¥
+		a.method3();		// privateë¡œ ì„ ì–¸í•œ ë©”ì„œë“œë¼ ì‹¤í–‰ ë¶ˆê°€
+	}			
+				
+}				

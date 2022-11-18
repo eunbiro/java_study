@@ -1,76 +1,76 @@
-package test.ch05;
-
-public class StringMethod {
-
-	public static void main(String[] args) {
-		String board = "1, ÀÚ¹Ù ÇĞ½À, ÂüÁ¶ Å¸ÀÔ, String °øºÎ Áß";
-		
-		String[] tokens = board.split(","); 
-
-		for (int i = 1; i < tokens.length; i++) {
-			System.out.println(tokens[i]);
-		}
-		/*
-		String subject = "ÀÚ¹Ù ÇÁ·Î±×·¡¹Ö";
-		
-		int location = subject.indexOf("Á¹·Á");
-		System.out.println(location);
-		
-//		String subString = subject.substring(location);
-//		System.out.println(subString);
-		
-		if (location != -1) {
-			System.out.println("ÇØ´ç ¹®ÀÚ¿­ÀÌ ¾ø½À´Ï´Ù.");
-		}
-		
-		boolean result = subject.contains("ÀÚ¹Ù");
-		
-		if (result) {
-			System.out.println("ÀÚ¹Ù¿Í °ü·Ã¾ø´Â Ã¥ÀÔ´Ï´Ù.");
-		}else {
-			System.out.println("ÀÚ¹Ù¿Í °ü·Ã¾ø´Â Ã¥ÀÔ´Ï´Ù.");
+package test.ch05;			
 			
-		}
-		*/
-		
-		/*
-		String ssn = "950624-1230123";
-		String firstName = ssn.substring(0, 6);	// 0~6 (6Àº 6ÀÇ ÀÌÀü±îÁö)
-		System.out.println(firstName);
-		
-		String secondName = ssn.substring(7);	// 7~³¡
-		System.out.println(secondName);
-		*/
-		/*
-		String oldStr = "ÀÚ¹Ù ¹®ÀÚ¿­";
-		String newStr = oldStr.replace("ÀÚ¹Ù", "JAVA");	// Æ¯Á¤ ¹®ÀÚ¸¦ ¹Ù²Ş
-		System.out.println(oldStr);
-		System.out.println(newStr);
-		*/
-		/*
-		String ssn = "9506241230123";	// ÁÖ¹Î¹øÈ£
-		char sex = ssn.charAt(6);
-		int length = ssn.length();
-		
-		if (length == 13) {
-			System.out.println("ÁÖ¹Î¹øÈ£ ÀÚ¸´¼ö°¡ ¸Â½À´Ï´Ù.");
-		} else {
-			System.out.println("ÁÖ¹Î¹øÈ£ ÀÚ¸´¼ö°¡ ¸ÂÁö ¾Ê½À´Ï´Ù..");
-		}
-		
-		switch (sex) {
-		case '1':
-		case '3':
-			System.out.println("³²ÀÚ ÀÔ´Ï´Ù.");
+public class StringMethod {			
+			
+	public static void main(String[] args) {		
+		String board = "1, ìë°” í•™ìŠµ, ì°¸ì¡° íƒ€ì…, String ê³µë¶€ ì¤‘";	
+			
+		String[] tokens = board.split(","); 	
+			
+		for (int i = 1; i < tokens.length; i++) {	
+			System.out.println(tokens[i]);
+		}	
+		/*	
+		String subject = "ìë°” í”„ë¡œê·¸ë˜ë°";	
+			
+		int location = subject.indexOf("ì¡¸ë ¤");	
+		System.out.println(location);	
+			
+//		String subString = subject.substring(location);	
+//		System.out.println(subString);	
+			
+		if (location != -1) {	
+			System.out.println("í•´ë‹¹ ë¬¸ìì—´ì´ ì—†ìŠµë‹ˆë‹¤.");
+		}	
+			
+		boolean result = subject.contains("ìë°”");	
+			
+		if (result) {	
+			System.out.println("ìë°”ì™€ ê´€ë ¨ì—†ëŠ” ì±…ì…ë‹ˆë‹¤.");
+		}else {	
+			System.out.println("ìë°”ì™€ ê´€ë ¨ì—†ëŠ” ì±…ì…ë‹ˆë‹¤.");
+			
+		}	
+		*/	
+			
+		/*	
+		String ssn = "950624-1230123";	
+		String firstName = ssn.substring(0, 6);	// 0~6 (6ì€ 6ì˜ ì´ì „ê¹Œì§€)
+		System.out.println(firstName);	
+			
+		String secondName = ssn.substring(7);	// 7~ë
+		System.out.println(secondName);	
+		*/	
+		/*	
+		String oldStr = "ìë°” ë¬¸ìì—´";	
+		String newStr = oldStr.replace("ìë°”", "JAVA");	// íŠ¹ì • ë¬¸ìë¥¼ ë°”ê¿ˆ
+		System.out.println(oldStr);	
+		System.out.println(newStr);	
+		*/	
+		/*	
+		String ssn = "9506241230123";	// ì£¼ë¯¼ë²ˆí˜¸
+		char sex = ssn.charAt(6);	
+		int length = ssn.length();	
+			
+		if (length == 13) {	
+			System.out.println("ì£¼ë¯¼ë²ˆí˜¸ ìë¦¿ìˆ˜ê°€ ë§ìŠµë‹ˆë‹¤.");
+		} else {	
+			System.out.println("ì£¼ë¯¼ë²ˆí˜¸ ìë¦¿ìˆ˜ê°€ ë§ì§€ ì•ŠìŠµë‹ˆë‹¤..");
+		}	
+			
+		switch (sex) {	
+		case '1':	
+		case '3':	
+			System.out.println("ë‚¨ì ì…ë‹ˆë‹¤.");
 			break;
-		case '2':
-		case '4':
-			System.out.println("¿©ÀÚ ÀÔ´Ï´Ù.");
+		case '2':	
+		case '4':	
+			System.out.println("ì—¬ì ì…ë‹ˆë‹¤.");
 			break;
-		}
-		*/
-		
-		
-	}
-
-}
+		}	
+		*/	
+			
+			
+	}		
+			
+}			

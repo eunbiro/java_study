@@ -1,8 +1,8 @@
-package test.ch06;
-
-public class CalculatorEX {
-
-	public static void main(String[] args) {
+package test.ch06;		
+		
+public class CalculatorEX {		
+		
+	public static void main(String[] args) {	
 		Calculator myCalc = new Calculator();
 		
 		
@@ -25,6 +25,6 @@ public class CalculatorEX {
 		
 		myCalc.powerOff();
 	*/	
-	}
-
-}
+	}	
+		
+}		

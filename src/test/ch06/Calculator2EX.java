@@ -1,15 +1,15 @@
-package test.ch06;
-
-public class Calculator2EX {
-
-	public static void main(String[] args) {
-//		Calculator2 calc2 = new Calculator2();	// °´Ã¼ »ı¼º, ÀÎ½ºÅÏ½º¸¦ »ı¼º
-//		calc2.pi = 10;
-//		calc2.plus(1, 2);
-		Calculator2.plus(1, 2);	// static »ı¼ºÀÚ´Â ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÏÁö ¾Ê¾Æµµ Á¢±Ù °¡´É
-		Calculator2.minus(1, 2);
-		System.out.println(Calculator2.pi);
-		
-	}
-
-}
+package test.ch06;			
+			
+public class Calculator2EX {			
+			
+	public static void main(String[] args) {		
+//		Calculator2 calc2 = new Calculator2();	// ê°ì²´ ìƒì„±, ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±
+//		calc2.pi = 10;	
+//		calc2.plus(1, 2);	
+		Calculator2.plus(1, 2);	// static ìƒì„±ìëŠ” ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ì§€ ì•Šì•„ë„ ì ‘ê·¼ ê°€ëŠ¥
+		Calculator2.minus(1, 2);	
+		System.out.println(Calculator2.pi);	
+			
+	}		
+			
+}			

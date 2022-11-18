@@ -1,35 +1,35 @@
-package test.ch06.question;
-
-public class Example2 {
-
-	static boolean isNumber(String str) {
-		boolean result = false;
-		
-		if (str == null || str == " ") {
-			result = false;
-		}
-		
-		for (int i = 0; i < str.length(); i++) {
-			char tmp = str.charAt(i);
-			
-			if (tmp >= '0' && tmp <= '9') {
+package test.ch06.question;				
+				
+public class Example2 {				
+				
+	static boolean isNumber(String str) {			
+		boolean result = false;		
+				
+		if (str == null || str == " ") {		
+			result = false;	
+		}		
+				
+		for (int i = 0; i < str.length(); i++) {		
+			char tmp = str.charAt(i);	
+				
+			if (tmp >= '0' && tmp <= '9') {	
 				result = true;
-			} else {
+			} else {	
 				result = false;
-			}
-		}
-		
-		return result;
-	}
-	
-	
-	
-	
-	public static void main(String[] args) {
-		String str = "123";
-		System.out.println(str + "´Â ¼ýÀÚÀÔ´Ï±î?" + isNumber(str));
-		str = "1234o";
-		System.out.println(str + "´Â ¼ýÀÚÀÔ´Ï±î?" + isNumber(str));
-	}
-
-}
+			}	
+		}		
+				
+		return result;		
+	}			
+				
+				
+				
+				
+	public static void main(String[] args) {			
+		String str = "123";		
+		System.out.println(str + "ëŠ” ìˆ«ìžìž…ë‹ˆê¹Œ?" + isNumber(str));		
+		str = "1234o";		
+		System.out.println(str + "ëŠ” ìˆ«ìžìž…ë‹ˆê¹Œ?" + isNumber(str));		
+	}			
+				
+}				

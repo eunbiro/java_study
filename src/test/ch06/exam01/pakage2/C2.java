@@ -1,13 +1,13 @@
-package test.ch06.exam01.pakage2;
-
-import test.ch06.exam01.pakage1.A;
-import test.ch06.exam01.pakage1.B;
-
-public class C2 {
-//	A a = new A();	// AÅ¬·¡½º(default) Á¢±Ù ºÒ°¡
-	B b = new B();
-	
-	A a1 = new A(true);		// public ½ÇÇà °¡´É
-//	A a2 = new A(1);		// default ½ÇÇà ºÒ°¡
-//	A a3 = new A("¹®ÀÚ¿­");	// private ½ÇÇà ºÒ°¡
-}
+package test.ch06.exam01.pakage2;			
+			
+import test.ch06.exam01.pakage1.A;			
+import test.ch06.exam01.pakage1.B;			
+			
+public class C2 {			
+//	A a = new A();	// Aí´ë˜ìŠ¤(default) ì ‘ê·¼ ë¶ˆê°€	
+	B b = new B();		
+			
+	A a1 = new A(true);		// public ì‹¤í–‰ ê°€ëŠ¥
+//	A a2 = new A(1);		// default ì‹¤í–‰ ë¶ˆê°€
+//	A a3 = new A("ë¬¸ìì—´");	// private ì‹¤í–‰ ë¶ˆê°€	
+}			

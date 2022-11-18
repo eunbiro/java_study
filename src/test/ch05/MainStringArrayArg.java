@@ -1,22 +1,22 @@
-package test.ch05;
-
-public class MainStringArrayArg {
-
-	public static void main(String[] args) {
-		if (args.length != 2) {
-			System.out.println("ÀÔ·Â°ª ºÎÁ·");
-			System.exit(0);	// ÇÁ·Î±×·¥ °­Á¦ Á¾·á
-		}
-		
-		String strNum1 = args[0];
-		String strNum2 = args[1];
-		
-		int num1 = Integer.parseInt(strNum1);
-		int num2 = Integer.parseInt(strNum2);
-		
-		int result = num1 + num2;
-		System.out.println("°á°ú : " + result);
-  
-	}
-
-}
+package test.ch05;				
+				
+public class MainStringArrayArg {				
+				
+	public static void main(String[] args) {			
+		if (args.length != 2) {		
+			System.out.println("ìž…ë ¥ê°’ ë¶€ì¡±");	
+			System.exit(0);	// í”„ë¡œê·¸ëž¨ ê°•ì œ ì¢…ë£Œ
+		}		
+				
+		String strNum1 = args[0];		
+		String strNum2 = args[1];		
+				
+		int num1 = Integer.parseInt(strNum1);		
+		int num2 = Integer.parseInt(strNum2);		
+				
+		int result = num1 + num2;		
+		System.out.println("ê²°ê³¼ : " + result);		
+  				
+	}			
+				
+}				

@@ -1,45 +1,45 @@
-package test.ch03;
-
-public class Acc {
-
-	public static void main(String[] args) {
-		/*
-		int apple =1 ;
-		double pieceUnit = 0.1;
-		int number = 7;
-		
-		// Á¤È®ÇÑ °è»êÀº Ç×»ó Á¤¼ö·Î ÇØ¾ß ÇÑ´Ù! doubleÀÌ¶ó¼­ ¾Æ·¡¿Í °°Àº °á°ú°¡ ³ª¿È.
-		double result = apple - number * pieceUnit; // apple(1) - 0.7(* ¿¬»êÀÚ ¿ì¼± °è»ê)
-		System.out.println("»ç°ú 1°³¿¡¼­ ³²Àº ¾ç: " + result); // °á°ú: 0.29999999999999993
-		*/
-		
-		/*
-		int apple =1 ;
-		int totalPiece = apple * 10;
-		int number = 7;
-		
-		// Á¤È®ÇÑ °è»êÀº Ç×»ó Á¤¼ö·Î ÇØ¾ß ÇÑ´Ù!
-		int result = totalPiece - number;
-		System.out.println("»ç°ú 1°³¿¡¼­ ³²Àº ¾ç: " + result/10.0); // ¼Ò¼ö·Î Ç¥ÇöÇÏ°í ½Í´Ù¸é Á¤¼ö·Î °è»ê ÈÄ¿¡ ÈÄÃ³¸®¸¦ ÇØÁÖ±â. (°­Á¦Çüº¯È¯ÀÌ³ª ¼Ò¼öÃ³¸® µû·Î)
-		*/
-		
-//		int x = 5;
-//		int y = 0;
-//		int result = 5 / 0; // 0À¸·Î ³ª´©¸é 'by zero'¶ó´Â exception ¿¡·¯
-//		System.out.println(result);
-		
-		int x = 5;
-		double y = 0.0;
-		double z = x / y;
-//		double z = x % y;
-		System.out.println(z + 2); // /¿¬»ê¿¡¼­´Â Infinity¶ó´Â °á°ú! ¿¬»ê ¾È µÊ. %¿¬»ê¿¡¼­´Â NaNÀÌ¶ó´Â °á°ú! (¼ıÀÚ ¾Æ´Ô)
-		
-		if (Double.isInfinite(z) || Double.isNaN(z)) {
-			System.out.println("°ª »êÃâ ºÒ°¡");
-		} else {
+package test.ch03;			
+			
+public class Acc {			
+			
+	public static void main(String[] args) {		
+		/*	
+		int apple =1 ;	
+		double pieceUnit = 0.1;	
+		int number = 7;	
+			
+		// ì •í™•í•œ ê³„ì‚°ì€ í•­ìƒ ì •ìˆ˜ë¡œ í•´ì•¼ í•œë‹¤! doubleì´ë¼ì„œ ì•„ë˜ì™€ ê°™ì€ ê²°ê³¼ê°€ ë‚˜ì˜´.	
+		double result = apple - number * pieceUnit; // apple(1) - 0.7(* ì—°ì‚°ì ìš°ì„  ê³„ì‚°)	
+		System.out.println("ì‚¬ê³¼ 1ê°œì—ì„œ ë‚¨ì€ ì–‘: " + result); // ê²°ê³¼: 0.29999999999999993	
+		*/	
+			
+		/*	
+		int apple =1 ;	
+		int totalPiece = apple * 10;	
+		int number = 7;	
+			
+		// ì •í™•í•œ ê³„ì‚°ì€ í•­ìƒ ì •ìˆ˜ë¡œ í•´ì•¼ í•œë‹¤!	
+		int result = totalPiece - number;	
+		System.out.println("ì‚¬ê³¼ 1ê°œì—ì„œ ë‚¨ì€ ì–‘: " + result/10.0); // ì†Œìˆ˜ë¡œ í‘œí˜„í•˜ê³  ì‹¶ë‹¤ë©´ ì •ìˆ˜ë¡œ ê³„ì‚° í›„ì— í›„ì²˜ë¦¬ë¥¼ í•´ì£¼ê¸°. (ê°•ì œí˜•ë³€í™˜ì´ë‚˜ ì†Œìˆ˜ì²˜ë¦¬ ë”°ë¡œ)	
+		*/	
+			
+//		int x = 5;	
+//		int y = 0;	
+//		int result = 5 / 0; // 0ìœ¼ë¡œ ë‚˜ëˆ„ë©´ 'by zero'ë¼ëŠ” exception ì—ëŸ¬	
+//		System.out.println(result);	
+			
+		int x = 5;	
+		double y = 0.0;	
+		double z = x / y;	
+//		double z = x % y;	
+		System.out.println(z + 2); // /ì—°ì‚°ì—ì„œëŠ” Infinityë¼ëŠ” ê²°ê³¼! ì—°ì‚° ì•ˆ ë¨. %ì—°ì‚°ì—ì„œëŠ” NaNì´ë¼ëŠ” ê²°ê³¼! (ìˆ«ì ì•„ë‹˜)	
+			
+		if (Double.isInfinite(z) || Double.isNaN(z)) {	
+			System.out.println("ê°’ ì‚°ì¶œ ë¶ˆê°€");
+		} else {	
 			System.out.println(z);
-		}
-//		
-	}
-
-}
+		}	
+//			
+	}		
+			
+}			

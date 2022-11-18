@@ -1,10 +1,10 @@
-package test.ch06;
-
-public class EarthEX {
-
-	public static void main(String[] args) {
-		System.out.println("Áö±¸ ¹İÁö¸§ : " + Earth.EARTH_RADIUS);
-		System.out.println("Áö±¸ Ç¥¸éÀû : " + Earth.EARTH_SURFACE_AREA);
-	}
-
-}
+package test.ch06;		
+		
+public class EarthEX {		
+		
+	public static void main(String[] args) {	
+		System.out.println("ì§€êµ¬ ë°˜ì§€ë¦„ : " + Earth.EARTH_RADIUS);
+		System.out.println("ì§€êµ¬ í‘œë©´ì  : " + Earth.EARTH_SURFACE_AREA);
+	}	
+		
+}		

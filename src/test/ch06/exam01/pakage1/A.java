@@ -1,22 +1,22 @@
-package test.ch06.exam01.pakage1;
-
-// Å¬·¡½º´Â public, default Á¢±ÙÁ¦ÇÑÀÚ¸¦ °¡Áú ¼ö ÀÖ´Ù.
-// »ı¼ºÀÚ´Â public, default, private Á¢±ÙÁ¦ÇÑÀÚ¸¦ °¡Áú ¼ö ÀÖ´Ù.
-public class A {
-	public int field1;
-	int field2;
-	private int field3;
-	
-	public A() {
-		field1 = 1;		// ½ÇÇà °¡´É
-		field2 = 1;		// ½ÇÇà °¡´É
-		field3 = 1;		// ½ÇÇà °¡´É
-		method1();		// ½ÇÇà °¡´É
-		method2();		// ½ÇÇà °¡´É
-		method3();		// ½ÇÇà °¡´É
-	}
-	
-	public void method1() {}
-	void method2() {}
-	private void method3() {}
-}
+package test.ch06.exam01.pakage1;				
+				
+// í´ë˜ìŠ¤ëŠ” public, default ì ‘ê·¼ì œí•œìë¥¼ ê°€ì§ˆ ìˆ˜ ìˆë‹¤.				
+// ìƒì„±ìëŠ” public, default, private ì ‘ê·¼ì œí•œìë¥¼ ê°€ì§ˆ ìˆ˜ ìˆë‹¤.				
+public class A {				
+	public int field1;			
+	int field2;			
+	private int field3;			
+				
+	public A() {			
+		field1 = 1;		// ì‹¤í–‰ ê°€ëŠ¥
+		field2 = 1;		// ì‹¤í–‰ ê°€ëŠ¥
+		field3 = 1;		// ì‹¤í–‰ ê°€ëŠ¥
+		method1();		// ì‹¤í–‰ ê°€ëŠ¥
+		method2();		// ì‹¤í–‰ ê°€ëŠ¥
+		method3();		// ì‹¤í–‰ ê°€ëŠ¥
+	}			
+				
+	public void method1() {}			
+	void method2() {}			
+	private void method3() {}			
+}				

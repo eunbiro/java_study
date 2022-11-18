@@ -1,42 +1,42 @@
-package test.ch06;
-
-public class GetSet {
-	private int speed;
-	private boolean stop;					// ÀÚµ¿Â÷°¡ ¸ØÃèÀ» ¶§ true, ÀÚµ¿Â÷°¡ ´Ş¸± ¶§ false
-	
-	
-	public int getSpeed() {
-		return speed;
-	}
-	
-	public void setSpeed(int speed) {
-		if (speed < 0) {
-			this.speed = 0;
-			return;							// ÇÔ¼ö ³¡³¿
-		} else {
-			this.speed = speed;
-		}
-	}
-	
-	public boolean isStop() {
-		return stop;
-	}
-	
-	public void setStop(boolean stop) {
-		this.stop = stop;
-		if (stop == true) {
-			this.speed = 0;
-		}
-	}
-	
-	
-	
-//	public int getSpeed() {
-//		return this.speed;
-//	}
-//	
-//	public void setSpeed(int speed) {
-//		this.speed = speed;
-//	}
-	
-}
+package test.ch06;										
+										
+public class GetSet {										
+	private int speed;									
+	private boolean stop;					// ìë™ì°¨ê°€ ë©ˆì·„ì„ ë•Œ true, ìë™ì°¨ê°€ ë‹¬ë¦´ ë•Œ false				
+										
+										
+	public int getSpeed() {									
+		return speed;								
+	}									
+										
+	public void setSpeed(int speed) {									
+		if (speed < 0) {								
+			this.speed = 0;							
+			return;							// í•¨ìˆ˜ ëëƒ„
+		} else {								
+			this.speed = speed;							
+		}								
+	}									
+										
+	public boolean isStop() {									
+		return stop;								
+	}									
+										
+	public void setStop(boolean stop) {									
+		this.stop = stop;								
+		if (stop == true) {								
+			this.speed = 0;							
+		}								
+	}									
+										
+										
+										
+//	public int getSpeed() {									
+//		return this.speed;								
+//	}									
+//										
+//	public void setSpeed(int speed) {									
+//		this.speed = speed;								
+//	}									
+										
+}										

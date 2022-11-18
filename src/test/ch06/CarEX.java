@@ -1,9 +1,9 @@
-package test.ch06;
-
-public class CarEX {
-
-	public static void main(String[] args) {
-		// 1. °´Ã¼ »ı¼º
+package test.ch06;		
+		
+public class CarEX {		
+		
+	public static void main(String[] args) {	
+		// 1. ê°ì²´ ìƒì„±
 		Car myCar = new Car();
 		
 //		System.out.println(myCar.company);
@@ -33,7 +33,7 @@ public class CarEX {
 		
 		
 //		myCar.speed = 60;
-//		System.out.println("¼öÁ¤µÈ °ª : " + myCar.speed);
-	}
-
-}
+//		System.out.println("ìˆ˜ì •ëœ ê°’ : " + myCar.speed);
+	}	
+		
+}		

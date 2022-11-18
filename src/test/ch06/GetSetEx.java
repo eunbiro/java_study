@@ -1,18 +1,18 @@
-package test.ch06;
-
-public class GetSetEx {
-
-	public static void main(String[] args) {
-		GetSet getset = new GetSet();
-		
-		getset.setSpeed(10);
-		System.out.println(getset.getSpeed());
-		
-		if (!getset.isStop()) {				// ´Ş¸®°í ÀÖÀ» ¶§
-			getset.setStop(true);			// ¸ØÃã
-		}
-		
-		System.out.println(getset.getSpeed());
-	}
-
-}
+package test.ch06;						
+						
+public class GetSetEx {						
+						
+	public static void main(String[] args) {					
+		GetSet getset = new GetSet();				
+						
+		getset.setSpeed(10);				
+		System.out.println(getset.getSpeed());				
+						
+		if (!getset.isStop()) {				// ë‹¬ë¦¬ê³  ìˆì„ ë•Œ
+			getset.setStop(true);			// ë©ˆì¶¤
+		}				
+						
+		System.out.println(getset.getSpeed());				
+	}					
+						
+}						

@@ -1,21 +1,21 @@
-package test.ch06;
-
-public class This {
-		// ÇÊµå
-		String model;
-		int speed;
-		
-		// ¸Å°³º¯¼ö¸íÀÌ ÇÊµå¿¡ ÀÖ´Â µ¥ÀÌÅÍ¸í°ú °°À¸¸é ÇÊµåµ¥ÀÌÅÍ¿¡´Â this¸¦ ºÙÀÎ´Ù. 
-		This(String model) {
-			this.model = model;
-		}
-		
-		void setSpeed(int speed) {
-			this.speed = speed;
-		}
-		
-		void run() {
-			this.setSpeed(100);									// °°Àº Å¬·¡½º °£ÀÇ ¸Ş¼Òµå È£Ãâ ½Ã this »ı·«°¡´É
-			System.out.println(this.model + ", " + this.speed);	// this »ı·«°¡´É
-		}
-}
+package test.ch06;												
+												
+public class This {												
+		// í•„ë“œ										
+		String model;										
+		int speed;										
+												
+		// ë§¤ê°œë³€ìˆ˜ëª…ì´ í•„ë“œì— ìˆëŠ” ë°ì´í„°ëª…ê³¼ ê°™ìœ¼ë©´ í•„ë“œë°ì´í„°ì—ëŠ” thisë¥¼ ë¶™ì¸ë‹¤. 										
+		This(String model) {										
+			this.model = model;									
+		}										
+												
+		void setSpeed(int speed) {										
+			this.speed = speed;									
+		}										
+												
+		void run() {										
+			this.setSpeed(100);									// ê°™ì€ í´ë˜ìŠ¤ ê°„ì˜ ë©”ì†Œë“œ í˜¸ì¶œ ì‹œ this ìƒëµê°€ëŠ¥
+			System.out.println(this.model + ", " + this.speed);	// this ìƒëµê°€ëŠ¥								
+		}										
+}												

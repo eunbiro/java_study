@@ -1,38 +1,38 @@
-package test.ch06;
-
-public class Car {
-	// 1. ÇÊµå : °´Ã¼ÀÇ µ¥ÀÌÅÍ¸¦ ÀúÀå!!!
-	String company = "Çö´ëÀÚµ¿Â÷";
-	String model = "±×·»Àú";
-	String color = "°ËÁ¤";
-	int maxSpeed = 350;
-	int speed;
-	static int numbering = 0;
-//	boolean start;	// ½Ãµ¿¿©ºÎ
-	
-	// ÀÚ¹Ù¿¡¼­´Â »ı¼ºÀÚ¸¦ ¸í½ÃÇÏÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ °úÁ¤¿¡¼­ »ı¼ºÀÚ¸¦ »ı¼ºÇØÁØ´Ù.
-	
-	Car() {
+package test.ch06;		
+		
+public class Car {		
+	// 1. í•„ë“œ : ê°ì²´ì˜ ë°ì´í„°ë¥¼ ì €ì¥!!!	
+	String company = "í˜„ëŒ€ìë™ì°¨";	
+	String model = "ê·¸ë Œì €";	
+	String color = "ê²€ì •";	
+	int maxSpeed = 350;	
+	int speed;	
+	static int numbering = 0;	
+//	boolean start;	// ì‹œë™ì—¬ë¶€
+		
+	// ìë°”ì—ì„œëŠ” ìƒì„±ìë¥¼ ëª…ì‹œí•˜ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ ê³¼ì •ì—ì„œ ìƒì„±ìë¥¼ ìƒì„±í•´ì¤€ë‹¤.	
+		
+	Car() {	
 		numbering++;
-	}
-	
-	Car(String model) {
+	}	
+		
+	Car(String model) {	
 //		this.model = model;
-		this(model, "Àº»ö", 250);
-	}
-	Car(String model, String color) {
+		this(model, "ì€ìƒ‰", 250);
+	}	
+	Car(String model, String color) {	
 //		this.model = model;
 //		this.color = color;
 		this(model, color, 250);
-	}
-	
-	Car(String model, String color, int maxSpeed) {
+	}	
+		
+	Car(String model, String color, int maxSpeed) {	
 		this.model = model;
 		this.color = color;
 		this.maxSpeed = maxSpeed;
-	}
-	
-
-
- 
-}
+	}	
+		
+		
+		
+ 		
+}		

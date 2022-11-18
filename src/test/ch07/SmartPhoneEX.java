@@ -1,16 +1,16 @@
-package test.ch07;
-
-public class SmartPhoneEX {
-
-	public static void main(String[] args) {
-		SmartPhone myPhone = new SmartPhone("°¶·°½Ã", "Àº»ö");
+package test.ch07;		
+		
+public class SmartPhoneEX {		
+		
+	public static void main(String[] args) {	
+		SmartPhone myPhone = new SmartPhone("ê°¤ëŸ­ì‹œ", "ì€ìƒ‰");
 		
 		System.out.println(myPhone.model + ", " + myPhone.color);
 		
 		myPhone.bell();
-		myPhone.sendVoice("¿©º¸¼¼¿ä");
-		myPhone.receiveVoice("³× ´©±¸¼¼¿ä?");
+		myPhone.sendVoice("ì—¬ë³´ì„¸ìš”");
+		myPhone.receiveVoice("ë„¤ ëˆ„êµ¬ì„¸ìš”?");
 		
-	}
-
-}
+	}	
+		
+}		

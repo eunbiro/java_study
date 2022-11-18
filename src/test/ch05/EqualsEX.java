@@ -1,36 +1,36 @@
-package test.ch05;
-
-public class EqualsEX {
-
-	public static void main(String[] args) {
-		// StringÀº ¸®ÅÍ·²ÀÌ °°À¸¸é °°Àº ÁÖ¼Ò¸¦ °¡¸£Å²´Ù.
-		String strVar1 = "È«±æµ¿";
-		String strVar2 = "È«±æµ¿";
-		
-		if (strVar1 == strVar2) {
-			System.out.println("strVar1¿Í strVar2´Â ÂüÁ¶°¡ °°À½");
-		} else {
-			System.out.println("strVar1¿Í strVar2´Â ÂüÁ¶°¡ ´Ù¸§");
-		}
-		
-		// °ªÀ» ºñ±³ÇÒ ¶© equalsÇÔ¼ö¸¦ »ç¿ë
-		if (strVar1.equals(strVar2)) {
-			System.out.println("strVar1¿Í strVar2´Â ¹®ÀÚ¿­ÀÌ °°À½");
-		}
-		
-		// new·Î »ı¼ºÇÏ¸é °°Àº °ªÀÌ¶óµµ °¡¸£Å°´Â ÁÖ¼Ò°¡ ´Ù¸£´Ù.
-		String strVar3 = new String("È«±æµ¿");
-		String strVar4 = new String("È«±æµ¿");
-		
-		if (strVar3 == strVar4) {
-			System.out.println("strVar1¿Í strVar2´Â ÂüÁ¶°¡ °°À½");
-		} else {
-			System.out.println("strVar1¿Í strVar2´Â ÂüÁ¶°¡ ´Ù¸§");
-		}
-		
-		if (strVar3.equals(strVar4)) {
-			System.out.println("strVar1¿Í strVar2´Â ¹®ÀÚ¿­ÀÌ °°À½");
-		}
-	}
-
-}
+package test.ch05;			
+			
+public class EqualsEX {			
+			
+	public static void main(String[] args) {		
+		// Stringì€ ë¦¬í„°ëŸ´ì´ ê°™ìœ¼ë©´ ê°™ì€ ì£¼ì†Œë¥¼ ê°€ë¥´í‚¨ë‹¤.	
+		String strVar1 = "í™ê¸¸ë™";	
+		String strVar2 = "í™ê¸¸ë™";	
+			
+		if (strVar1 == strVar2) {	
+			System.out.println("strVar1ì™€ strVar2ëŠ” ì°¸ì¡°ê°€ ê°™ìŒ");
+		} else {	
+			System.out.println("strVar1ì™€ strVar2ëŠ” ì°¸ì¡°ê°€ ë‹¤ë¦„");
+		}	
+			
+		// ê°’ì„ ë¹„êµí•  ë• equalsí•¨ìˆ˜ë¥¼ ì‚¬ìš©	
+		if (strVar1.equals(strVar2)) {	
+			System.out.println("strVar1ì™€ strVar2ëŠ” ë¬¸ìì—´ì´ ê°™ìŒ");
+		}	
+			
+		// newë¡œ ìƒì„±í•˜ë©´ ê°™ì€ ê°’ì´ë¼ë„ ê°€ë¥´í‚¤ëŠ” ì£¼ì†Œê°€ ë‹¤ë¥´ë‹¤.	
+		String strVar3 = new String("í™ê¸¸ë™");	
+		String strVar4 = new String("í™ê¸¸ë™");	
+			
+		if (strVar3 == strVar4) {	
+			System.out.println("strVar1ì™€ strVar2ëŠ” ì°¸ì¡°ê°€ ê°™ìŒ");
+		} else {	
+			System.out.println("strVar1ì™€ strVar2ëŠ” ì°¸ì¡°ê°€ ë‹¤ë¦„");
+		}	
+			
+		if (strVar3.equals(strVar4)) {	
+			System.out.println("strVar1ì™€ strVar2ëŠ” ë¬¸ìì—´ì´ ê°™ìŒ");
+		}	
+	}		
+			
+}			
