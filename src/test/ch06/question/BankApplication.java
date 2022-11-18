@@ -56,41 +56,59 @@ public class BankApplication {
 	}					
 						
 	// 3. 예금					
-	public static void deposit() {					
-		System.out.println("------");				
-		System.out.println("예금");				
-		System.out.println("------");				
-						
-		System.out.println("계좌번호 : ");				
-		String accNum = scanner.next();				
-		System.out.println("예금액");				
-		int balance = scanner.nextInt();				
-		findAccount(accNum).setSumBalance(balance);				
-						
+	public static void deposit() {
+		System.out.println("------");
+		System.out.println("예금");
+		System.out.println("------");
+
+		System.out.println("계좌번호 : ");
+		String accNum = scanner.next();
+		System.out.println("예금액");
+		int balance = scanner.nextInt();
+
+		Account2 chkNum = findAccount(accNum);
+
+		if (chkNum != null) {
+			chkNum.setSumBalance(balance);
+		} else {
+			System.out.println("잘못 입력하셨습니다.");
+		}
 	}					
 						
 	// 4. 출금					
-	public static void withdraw() {					
-		System.out.println("------");				
-		System.out.println("출금");				
-		System.out.println("------");				
-						
-		System.out.println("계좌번호 : ");				
-		String accNum = scanner.next();				
-		System.out.println("출금액");				
-		int balance = scanner.nextInt();				
-		findAccount(accNum).setMinusBalance(balance);				
-						
-	}					
-						
-	private static Account2 findAccount(String accNum) {					
-		for (int i = 0; i < accountArray.length; i++) {				
-			if (accountArray[i].getAccNum().equals(accNum)) {			
-				return accountArray[i];		
-			}			
-		}				
-		return null;				
-	}					
+	public static void withdraw() {
+		System.out.println("------");
+		System.out.println("출금");
+		System.out.println("------");
+
+		System.out.println("계좌번호 : ");
+		String accNum = scanner.next();
+		System.out.println("출금액");
+		int balance = scanner.nextInt();
+
+		Account2 chkNum = findAccount(accNum);
+
+		if (chkNum != null) {
+			chkNum.setMinusBalance(balance);
+		} else {
+			System.out.println("잘못 입력하셨습니다.");
+		}
+
+	}
+
+	private static Account2 findAccount(String accNum) {
+		Account2 chkNum = null;
+
+		for (int i = 0; i < accountArray.length; i++) {
+
+			if (accountArray[i] != null) {
+				if (accountArray[i].getAccNum().equals(accNum)) {
+					chkNum = accountArray[i];
+				}
+			}
+		}
+		return chkNum;
+	}			
 						
 						
 						
