@@ -13,7 +13,7 @@ public class DateEx {
 		String strNow1 = now.toString();	// 문자열 변경
 		System.out.println(strNow1);
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");	// 포맷형태 객체생성
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 E요일 HH시 mm분 ss초");	// 포맷형태 객체생성
 		
 		String strNow2 = sdf.format(now);	// Date객체를 넣어준다.
 		System.out.println(strNow2);

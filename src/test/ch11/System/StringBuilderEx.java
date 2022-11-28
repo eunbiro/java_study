@@ -14,7 +14,7 @@ public class StringBuilderEx {
 		
 		StringBuilder str = new StringBuilder();
 		for (int i = 1; i <= 100; i++) {
-			str = append(i);
+			str.append(i);
 		}
 		System.out.println(str);
 		
