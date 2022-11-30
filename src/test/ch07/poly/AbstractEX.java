@@ -11,6 +11,10 @@ public class AbstractEX {
 		
 		animalSound(dog);
 		animalSound(cat);
+		
+
+		Animal dog1 = new Dog();
+		dog.sound();
 
 	}
 	
